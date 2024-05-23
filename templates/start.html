@@ -4,35 +4,28 @@
     <meta charset="utf-8">
     <title>LOTUS</title>
     <style>
-      h2 {
-        text-align: center;
-      }
-      a:link, a:visited {
-        background-color: #6f36f4;
-        color: white;
-        padding: 14px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        width: 78px;
-      }
-      
-      a:hover, a:active {
-        background-color: rgb(0, 255, 174);
-      }
-      </style>
+    </style>
   </head>
   <body>
-    <h2>Отчеты</h2>
-    {% for file_row in fileNames  %}
-    <div class="row">
-      {% for file, name in file_row %}
-          <a href="{{url_for('greet', file ='%s'%file, name = '%s'%name )}}">{{ name }}</a>
-      {% endfor %}
-    </div>
-    <div class="row">
-      <b>&nbsp; </b>
-    </div>
-    {% endfor %} 
+    {% block content %}
+      <table id="data" class="table table-striped">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>ФИО врача</th>
+            <th>количество принятых пациентов</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for record in records %}
+            <tr>
+              <td>{{ record.date}}</td>
+              <td>{{ record.doctor}}</td>
+              <td>{{ record.patients }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endblock %}
   </body>
 </html>
