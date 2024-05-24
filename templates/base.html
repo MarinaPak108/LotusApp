@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<style>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+  
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  
+    .topnav a.active {
+      background-color: #2fa7cc;
+      color: white;
+    }
+
+   
+
+
+  
+    table.timecard caption {
+      background-color: #f79646;
+      color: #fff;
+      font-size: x-large;
+      font-weight: bold;
+      letter-spacing: .3em;
+    }
+  
+  
+    table.timecard th, table.timecard td {
+      padding: 3px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #f79646 #ccc;
+    }
+  
+    table.timecard td {
+      text-align: right;
+    }
+  
+    table.timecard tbody th {
+      text-align: left;
+      font-weight: normal;
+    }
+  
+    table.timecard tfoot {
+      font-weight: bold;
+      font-size: large;
+      background-color: #687886;
+      color: #fff;
+    }
+  
+    table.timecard tr.even {
+      background-color: #fde9d9;
+    }
+  </style>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-color: #55B6AF;">
+    <div class="topnav" >
+        <a href="/">Главная страница</a>
+        <a href="/assign">Врач</a>
+    </div>
+    <div>
+      {% block content %}{% endblock %} 
+    </div>
+       
+</body>
+</html>
