@@ -1,0 +1,39 @@
+{% extends 'base.html' %} 
+{% block title %}PATIENTS {% endblock %}
+{% block content %}
+  <div style="padding:10px;">
+    <table id="data" style="margin: auto;
+    padding:20px;
+    width: 600px;
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #fff;">
+      <thead>
+        <tr>
+          <th style = "  border: 1px solid black;">Дата</th>
+          <th style = "  border: 1px solid black;">ФИО врача</th>
+          <th style = "  border: 1px solid black;">Принятые пациенты</th>
+        </tr>
+      </thead>
+      <tbody style="text-align: center;
+      font-weight: normal; color:white">
+        {% for patient in patients %}
+          <tr>
+            <td style = "  border: 1px solid black;">{{ patient.time}}</td>
+            <td style = "  border: 1px solid black;">{{ patient.patient}}</td>
+            <td style = "  border: 1px solid black;">{{ patient.form }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h2>Введите ФИО Пациента</h2>
+    <form method="POST" >
+      <input name="text" placeholder="ФИО пациента">
+      <input form="text" placeholder="Форма">
+      <input type="submit">
+    </form>
+  </div>
+{% endblock %}

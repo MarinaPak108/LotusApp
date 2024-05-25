@@ -1,32 +1,32 @@
 {% extends 'base.html' %} 
-{% block title %}LOTUS{% endblock %}
+{% block title %}OVERVIEW {% endblock %}
 {% block content %}
   <div style="padding:30px;">
     <table id="data" style="margin: auto;
     padding:20px;
     width: 600px;
-    border-collapse: collapse;
-    border: 1px solid #fff; /*for older IE*/
-    border-style: hidden;">
+    border: 1px solid #fff;">
       <thead style = " padding: 8px;
       background-color: grey;
       font-size: large;">
         <tr style="padding: 3px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: white;">
-          <th>Дата</th>
-          <th>ФИО врача</th>
-          <th>количество принятых пациентов</th>
+        border: 1px solid black;">
+          <th style = "  border: 1px solid black;">ВРЕМЯ</th>
+          <th style = "  border: 1px solid black;">ФИО Пациента</th>
+          <th style = "  border: 1px solid black;">ФОРМА</th>
+          <th style = "  border: 1px solid black;"></th>
         </tr>
       </thead>
       <tbody style="text-align: center;
       font-weight: normal; color:white">
         {% for record in records %}
           <tr>
-            <td>{{ record.date}}</td>
-            <td>{{ record.doctor}}</td>
-            <td>{{ record.patients }}</td>
+            <td style = "  border: 1px solid black;">{{ record.date}}</td>
+            <td style = "  border: 1px solid black;">{{ record.doctor}}</td>
+            <td style = "  border: 1px solid black;">{{ record.patients }}</td>
+            <td style = "  border: 1px solid black;"><form action="/day/{{record.date}}">
+              <input type="submit" value="детали" />
+          </form></td>
           </tr>
         {% endfor %}
       </tbody>

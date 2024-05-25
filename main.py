@@ -4,6 +4,7 @@ from datetime import date
 from flask import Flask, redirect, request, render_template
 import openpyxl
 
+from models.patient import Patient
 from models.record import Record
 
 app = Flask(__name__, static_url_path="", static_folder=os.path.join(os.getcwd(), "flask_desktop_app/phrases"))
@@ -38,13 +39,35 @@ def my_form_post():
     day = str(date.today())
     path=os.path.join(os.getcwd(), "records/medical.xlsx")
     wb = openpyxl.load_workbook(path)
-    wb.create_sheet(day)
+    ws_new = wb.create_sheet(day)
+    
+    ws_header = ["Время","ФИО пациента", "Форма"]
+    ws_new[0]=ws_header
+    
     new_data = [day, text, 0]
     ws = wb["current"]
     ws.append(new_data)
     wb.save("records/medical.xlsx")
     return redirect("/")
 
+@app.route('/day/<id>')
+def patients(id):
+    path=os.path.join(os.getcwd(), "records/medical.xlsx")
+    wb = openpyxl.load_workbook(path)
+    if(id in wb.sheetnames):
+         ws = wb[id]
+         patients=[]
+         for i in range(2,ws.max_row+1):
+            args =[cell.value for cell in ws[i]]
+            patient = Patient(*args)
+            patients.append(patient)
+         return render_template('patient.html', patients = patients)
+    else:
+        return redirect("/")
+    
+
+
+
 if __name__ == "__main__":
-  FlaskUI(app=app, server="flask",  width= 700, height=700).run()
+  FlaskUI(app=app, server="flask",  width= 800, height=600).run()
   
