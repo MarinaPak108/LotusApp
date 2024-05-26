@@ -3,7 +3,16 @@
 {% block content %}
     <h2>Введите ФИО Врача</h2>
     <form method="POST" >
-        <input name="text">
+        <div>
+            <input type="hidden" list="userA" id = "docid"/>
+            <select id="userA" name="text">
+                <option value="" selected>выберите врача</option>
+                {% for doctor in doctors %}
+                <option value = {{ doctor.id}}> {{ doctor.name}}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
         <input type="submit">
     </form>
 {% endblock %}

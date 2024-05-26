@@ -1,9 +1,10 @@
 import os
 from flaskwebgui import FlaskUI
-from datetime import date
+from datetime import date, datetime
 from flask import Flask, redirect, request, render_template
 import openpyxl
 
+from models.doctor import Doctor
 from models.patient import Patient
 from models.record import Record
 
@@ -31,20 +32,32 @@ def home():
 
 @app.route('/assign')
 def my_form():
-    return render_template('assign.html')
+    path=os.path.join(os.getcwd(), "records/medical.xlsx")
+    doctors = []
+    wb = openpyxl.load_workbook(path)
+    ws = wb['settings']
+    for i in range(2,ws.max_row+1):
+            args =[cell.value for cell in ws[i]]
+            doctor = Doctor(*args)
+            doctors.append(doctor)
+    return render_template('assign.html', doctors = doctors)
 
 @app.route('/assign', methods=['POST'])
 def my_form_post():
-    text = request.form['text']
+    docId = request.form['text']
     day = str(date.today())
+    
     path=os.path.join(os.getcwd(), "records/medical.xlsx")
     wb = openpyxl.load_workbook(path)
     ws_new = wb.create_sheet(day)
     
-    ws_header = ["Время","ФИО пациента", "Форма"]
-    ws_new[0]=ws_header
+    ws_header = ["Время","ФИО пациента", "М\Ж\Р"]
+    ws_new.append(ws_header)
     
-    new_data = [day, text, 0]
+    wsDoc = wb["settings"]
+    docName = wsDoc[docId][1].value
+    
+    new_data = [day, docName, 0, docId]
     ws = wb["current"]
     ws.append(new_data)
     wb.save("records/medical.xlsx")
@@ -61,10 +74,25 @@ def patients(id):
             args =[cell.value for cell in ws[i]]
             patient = Patient(*args)
             patients.append(patient)
-         return render_template('patient.html', patients = patients)
+         return render_template('patient.html', patients = patients, day = id)
     else:
         return redirect("/")
     
+@app.route('/day/<id>', methods=['POST'])
+def patients_post(id):
+    patient_name = request.form['name']
+    patient_type = request.form['type']
+    patient_time = datetime.now()
+    path=os.path.join(os.getcwd(), "records/medical.xlsx")
+    wb = openpyxl.load_workbook(path)
+    if(id in wb.sheetnames):
+        ws=wb[id]
+        new_data = [patient_time, patient_name, patient_type]
+        ws.append(new_data)
+        wb.save("records/medical.xlsx")
+        return redirect("/day/"+id)
+    else:
+        return redirect("/")
 
 
 

@@ -1,5 +1,5 @@
 class Patient():
-    def __init__(self, time=None, patient=None, form=None):
+    def __init__(self, time=None, patient=None, type=None):
         self.time = time
         self.patient = patient
-        self.form = form
+        self.type = type
