@@ -28,6 +28,7 @@
       </tbody>
     </table>
   </div>
+  {% if  isActive %}
   <div>
     <h2>Введите ФИО Пациента</h2>
     <form method="POST" >
@@ -42,4 +43,16 @@
       <input type="submit">
     </form>
   </div>
+  {% endif %}
+{% endblock %}
+{% block javascripts_local %}
+  {{ super() }} {# to load the parent assets #}
+  <script>
+    var pBody = document.querySelector('#data');
+    pBody.scrollTop = pBody.scrollHeight - pBody.clientHeight;
+    var username = {{ isActive }}
+    if(username){
+      
+    }
+  </script>
 {% endblock %}

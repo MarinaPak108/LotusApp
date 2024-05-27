@@ -67,6 +67,9 @@ def my_form_post():
 def patients(id):
     path=os.path.join(os.getcwd(), "records/medical.xlsx")
     wb = openpyxl.load_workbook(path)
+    isActiveDay = False
+    if(id == str(date.today())):
+        isActiveDay = True
     if(id in wb.sheetnames):
          ws = wb[id]
          patients=[]
@@ -74,7 +77,7 @@ def patients(id):
             args =[cell.value for cell in ws[i]]
             patient = Patient(*args)
             patients.append(patient)
-         return render_template('patient.html', patients = patients, day = id)
+         return render_template('patient.html', patients = patients, day = id, isActive = isActiveDay)
     else:
         return redirect("/")
     
