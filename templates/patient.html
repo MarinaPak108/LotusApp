@@ -11,9 +11,11 @@
     border: 1px solid #fff;">
       <thead>
         <tr>
-          <th style = "  border: 1px solid black;">Дата</th>
+          <th style = "  border: 1px solid black;">Время приема</th>
           <th style = "  border: 1px solid black;">ФИО Пациента</th>
           <th style = "  border: 1px solid black;">М\Ж\Р</th>
+          <th style = "  border: 1px solid black;">Дата рождения</th>
+          <th style = "  border: 1px solid black;">Причина</th>
         </tr>
       </thead>
       <tbody style="text-align: center;
@@ -23,6 +25,8 @@
             <td style = "  border: 1px solid black;">{{ patient.time}}</td>
             <td style = "  border: 1px solid black;">{{ patient.patient}}</td>
             <td style = "  border: 1px solid black;">{{ patient.type }}</td>
+            <td style = "  border: 1px solid black;">{{ patient.birthdate }}</td>
+            <td style = "  border: 1px solid black;">{{ patient.reason }}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -35,12 +39,17 @@
       <input name="name" placeholder="ФИО пациента">
       <input type="hidden" list="type">
       <select name="type" id="type">
-        <option value="" selected>выберите тип пациента</option>
+        <option selected disabled>выберите тип пациента</option>
         <option value="M">МУЖЧИНА</option>
         <option value="Ж">ЖЕНЩИНА</option>
         <option value="Р">РЕБЕНОК</option>
       </select>
-      <input type="submit">
+      <input type="text" name="birthdate" placeholder="Дата рождения"
+        onfocus="(this.type='date')">
+      <input name="reason" placeholder="Тема беседы">
+      <div>
+        <input type="submit">
+      </div>
     </form>
   </div>
   {% endif %}
