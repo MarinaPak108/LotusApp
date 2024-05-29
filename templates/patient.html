@@ -16,6 +16,7 @@
           <th style = "  border: 1px solid black;">М\Ж\Р</th>
           <th style = "  border: 1px solid black;">Дата рождения</th>
           <th style = "  border: 1px solid black;">Причина</th>
+          <th style = "  border: 1px solid black;">Давление</th>
         </tr>
       </thead>
       <tbody style="text-align: center;
@@ -27,6 +28,7 @@
             <td style = "  border: 1px solid black;">{{ patient.type }}</td>
             <td style = "  border: 1px solid black;">{{ patient.birthdate }}</td>
             <td style = "  border: 1px solid black;">{{ patient.reason }}</td>
+            <td style = "  border: 1px solid black;">{{ patient.pressure }}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -40,13 +42,14 @@
       <input type="hidden" list="type">
       <select name="type" id="type">
         <option selected disabled>выберите тип пациента</option>
-        <option value="M">МУЖЧИНА</option>
+        <option value="М">МУЖЧИНА</option>
         <option value="Ж">ЖЕНЩИНА</option>
         <option value="Р">РЕБЕНОК</option>
       </select>
       <input type="text" name="birthdate" placeholder="Дата рождения"
         onfocus="(this.type='date')">
       <input name="reason" placeholder="Тема беседы">
+      <input name="pressure" placeholder="Давление">
       <div>
         <input type="submit">
       </div>

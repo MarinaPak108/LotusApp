@@ -75,10 +75,11 @@ def patients_post(id):
     patient_time = datetime.now()
     patient_birthdate = request.form['birthdate']
     patient_reason = request.form['reason']
-
+    patient_pressure = request.form['pressure']
     wb = Service.getWB()
+    
     if(id in wb.sheetnames):
-        new_data = [patient_time, patient_name, patient_type, patient_birthdate, patient_reason]
+        new_data = [patient_time, patient_name, patient_type, patient_birthdate, patient_reason, patient_pressure]
         Service.saveRecord(wb, id, new_data)
         return redirect("/day/"+id)
     else:
