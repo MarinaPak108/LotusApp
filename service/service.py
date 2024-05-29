@@ -33,9 +33,7 @@ class Service():
     def countPatients(wb, records, today):
         
         ws = wb['current']
-        row = ws.max_row
         for i in  range(2, ws.max_row+1):
-            rrow = ws[i]
             if(records[i-2].patients == -1 or records[i-2].date == today):
                 day_name = records[i-2].date #name of the day and worksheet name
                 men_num=0

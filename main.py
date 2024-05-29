@@ -15,7 +15,7 @@ directory = os.getcwd()
 
 @app.route("/")
 def home():
-    day = str(date.today())
+    day = Service.getDay()
     wb = Service.getWB()
     names = wb.sheetnames
     if (day not in names):
@@ -29,15 +29,19 @@ def home():
 
 @app.route('/assign')
 def my_form():
+    day = Service.getDay()
     wb = Service.getWB()
+    isButtonActive=False
     ws = wb['settings']
     doctors = Service.fromExcelToList(Doctor, ws)
-    return render_template('assign.html', doctors = doctors)
+    if (day not in wb.sheetnames):
+        isButtonActive = True
+    return render_template('assign.html', doctors = doctors, isActive = isButtonActive)
 
 @app.route('/assign', methods=['POST'])
 def my_form_post():
     docId = request.form['text']
-    day = str(date.today())
+    day = Service.getDay()
 
     wb = Service.getWB()
     
