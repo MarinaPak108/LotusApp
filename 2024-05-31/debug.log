@@ -1,0 +1,53 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53222
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:22:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:22:38] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:22:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:22:40] "GET /day/2024-05-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:22:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:29:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:29:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:29:08] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:29:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:29:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:29:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:30:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:30:57] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:30:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller___main__ : количество пациентов в 2024-05-30 равно 12
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:30:58] "GET /day/2024-05-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:30:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65031
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:07] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller___main__ : number of patients in 2024-05-30 equals 12
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:09] "GET /day/2024-05-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller___main__ : number of patients in 2024-05-27 equals 14
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:12] "GET /day/2024-05-27 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller___main__ : number of patients in 2024-05-25 equals 24
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:15] "GET /day/2024-05-25 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:32:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65272
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:36:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:36:07] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:36:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller_patients : number of patients in 2024-05-30 equals 12
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:36:09] "GET /day/2024-05-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 18:36:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
