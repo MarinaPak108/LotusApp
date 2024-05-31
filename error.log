@@ -1,0 +1,99 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62072
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Controller : in def __main__ - Service.getWB() missing 1 required positional argument: 'logger'
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'home' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:22:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:22:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62140
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:error in getWB:
+ERROR:main:Controller : in def __main__ - 
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'home' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:24:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:24:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62217
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:error in getWB:
+ERROR:main:Controller : in def __main__ - 
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'home' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:27:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:27:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62262
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:error in getWB:
+ERROR:main:Controller : in def __main__ - 
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:29:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:29:01] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:29:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:Service msg: error in getWB:error in getWB:
+ERROR:main:Controller : in def __main__ - 
+ERROR:main:Exception on /assign [GET]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'my_form' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:29:05] "[35m[1mGET /assign HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62309
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:error in getWB:
+ERROR:main:Controller : in def __main__ - 
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:30:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:30:51] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:30:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:Service msg: error in getWB:error in getWB:
+ERROR:main:Controller : in def __main__ - 
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:30:53] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:30:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62351
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Controller : in def __main__ - error in getWB:
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:36] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:37] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+ERROR:main:Controller : in def __main__ - error in getWB:
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 13:32:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
