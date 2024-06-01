@@ -4,25 +4,28 @@ from flask import Flask, redirect, request, render_template
 import logging   
 
 from models.doctor import Doctor
-from models.patient import Patient
+from models.patient import Patient 
 from service.service import Service
 
 app = Flask(__name__)
 layer = "=============> Controller"
 day = Service.getDay()
-wb = Service.getWB()
-folder_path =os.path.join("D:\LotusApp\records", day)
+folder_path =os.path.join("records", day)
+grownUp = Service.countGrownUp()
+century = Service.countCentury()
 
 @app.route("/")
 def home():
     try: 
+        wb = Service.getWB()
         printErrorInLoggerThrowException(wb)
         names = wb.sheetnames
         if (day not in names):
             app.logger.info('%s def %s: day - %s', layer, request.endpoint,  day)
-            previous_path = os.path.join("D:\LotusApp\records", names[-1])
-            if(os.path.isdir(previous_path)):
-                wb.save(previous_path)
+            yesterday_path = os.path.join("records", names[-1])
+            if(os.path.isdir(yesterday_path)):
+                yesterday_path = os.path.join(yesterday_path, "medical.xlsx")
+                wb.save(yesterday_path) 
             return redirect('/assign')
         else:
             ws = wb["current"]
@@ -38,6 +41,7 @@ def home():
 @app.route('/assign')
 def my_form():
     try:
+        wb = Service.getWB()
         printErrorInLoggerThrowException(wb)
         isButtonActive=False
         ws = wb['settings']
@@ -53,10 +57,11 @@ def my_form():
 @app.route('/assign', methods=['POST'])
 def my_form_post():
     try:
+        wb = Service.getWB()
         docId = request.form['text']
         printErrorInLoggerThrowException(wb)
         ws_new = wb.create_sheet(day) 
-        ws_header = ["Время","ФИО пациента", "М\Ж\Р", "Дата рождения", "Причина", "Давление"]
+        ws_header = ["ID", "Время","ФИО пациента", "М\Ж\Р", "Дата рождения", "Причина", "Давление"]
         ws_new.append(ws_header)
         app.logger.info('%s def %s : added worksheet (%s)', layer,request.endpoint ,day)
         
@@ -77,6 +82,7 @@ def my_form_post():
 @app.route('/day/<id>/<errid>/<name>')
 def patients(id, errid, name):
     try:
+        wb = Service.getWB()
         error = ""
         printErrorInLoggerThrowException(wb)
         isActiveDay = False
@@ -95,6 +101,8 @@ def patients(id, errid, name):
                                     day = id, 
                                     isActive = isActiveDay, 
                                     length = len(patients)+1, 
+                                    grown = grownUp,
+                                    century = century,
                                     error = error)
         else:
             return redirect("/")
@@ -148,12 +156,12 @@ def patients_post_error(id):
             redirectToErrorPage(str(e), "def "+request.endpoint)
 
 #################################################################################
-#to print error msg from service layer and then redirect via Exception to error.html page
+#to print error msg from service layer and then rais Exception
 def printErrorInLoggerThrowException(variableToCheck):
     if((type(variableToCheck) is str) and variableToCheck.startswith("error")):
                 app.logger.error('Service msg: %s', variableToCheck)
                 raise Exception
-#to save to logger msg and redirect to error page
+#to save to logger msg and redirect to error.html page
 def redirectToErrorPage(msg, name):
     app.logger.error('%s : in def %s - %s', layer,name, msg)
     return render_template('error.html')

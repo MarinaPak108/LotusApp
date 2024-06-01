@@ -52,8 +52,8 @@
         <option value="Ж">ЖЕНЩИНА</option>
         <option value="Р">РЕБЕНОК</option>
       </select>
-      <input type="text" name="birthdate" placeholder="Дата рождения"
-        onfocus="(this.type='date')">
+      <input type="text" name="birthdate" id="bday" placeholder="Дата рождения"
+        onfocus="myFunction(this)">
       <input name="reason" placeholder="Тема беседы">
       <input name="pressure" placeholder="Давление">
       <div>
@@ -66,10 +66,22 @@
 {% block javascripts_local %}
   {{ super() }} {# to load the parent assets #}
   <script>
-    var pBody = document.querySelector('#data');
-    pBody.scrollTop = pBody.scrollHeight - pBody.clientHeight;
-    var username = {{ isActive }}
-    if(username){ 
+    
+    if({{ isActive|tojson }}){ 
+      var pBody = document.querySelector('#data');
+      pBody.scrollTop = pBody.scrollHeight - pBody.clientHeight;
     }
+    
+    function myFunction(x) {
+      var type = document.getElementById("type");
+      x.type = "date";
+      x.min = {{ century|tojson }};
+      if(type.value == "М" || type.value == "Ж"){
+        x.max = {{ grown|tojson }};
+      }
+      else{
+        x.max = {{ day|tojson }};
+      }
+      }
   </script>
 {% endblock %}

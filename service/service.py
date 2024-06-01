@@ -3,6 +3,7 @@ import openpyxl
 from datetime import date, datetime
 from typing import TypeVar
 import pandas as pd
+from dateutil.relativedelta import relativedelta
 
 from models.patient import Patient
 from models.record import Record
@@ -35,12 +36,9 @@ class Service():
             return "error in fromExcelToList:"+str(e)
     
     def saveRecord(wb,name, new_data):
-        try:
-            ws=wb[name]
-            ws.append(new_data)
-            wb.save("records/medical.xlsx")
-        except Exception as e:
-            return "error in saveRecord:"+str(e)
+        ws=wb[name]
+        ws.append(new_data)
+        wb.save("records/medical.xlsx")
      
     def countPatients(self, wb, today):
         try: 
@@ -118,7 +116,13 @@ class Service():
                 return ("/")  
         except Exception as e:
             return "error in checkSavePatientGetPage:"+str(e)  
-                     
+    
+    def countGrownUp():
+        yrs = date.today()  - relativedelta(years=18)  
+        return str(yrs)  
+    def countCentury():
+        yrs = date.today()  - relativedelta(years=100)  
+        return str(yrs)          
                 
 
     

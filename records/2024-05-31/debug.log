@@ -1,0 +1,142 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55896
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:28:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:28:17] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:28:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55988
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:29:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:29:10] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:29:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56904
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:06] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56714
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:40] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:42] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 1_aedf saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:53] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:53] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:38:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 1_sjfn'pdfi saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:41:26] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:41:26] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:41:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57348
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:19] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:21] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 3_jhblk saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:42] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:42] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:53] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:47:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-05-31 equals 5
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:06] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:07] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:48:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58294
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:49:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:49:47] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:49:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:49:52] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:49:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 3_aedf saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:17] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:17] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:23] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:50:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58516
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-05-31
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:53:52] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-05-31 equals 5
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:53:52] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:53:52] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:53:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def my_form_post : added worksheet (2024-05-31)
+INFO:main:=============> Controller def my_form_post : saved doctor (3) name - Karp_Kuzmin on day 2024-05-31
+INFO:main:=============> Controller def my_form_post: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:53:57] "[32mPOST /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:54:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:54:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:54:05] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:54:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 1_aedf saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:26] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:26] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:36] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:55:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56692
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:56:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:56:40] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:56:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:56:45] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:56:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 1_fkmj'fdpk saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:57:09] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:57:09] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:57:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 1_aedf saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:57:31] "[32mPOST /day/2024-05-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:57:31] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:57:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-30 equals 12
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:04] "GET /day/2024-05-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-05-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:09] "GET /day/2024-05-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/May/2024 20:58:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
