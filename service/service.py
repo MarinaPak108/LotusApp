@@ -10,11 +10,9 @@ from model.record import Record
 class Service():
     T = TypeVar('T')
     
-    def getWB():
+    def getWB(path_to_file):
         try:
-            path=os.path.join("C:", "records/medical.xlsx")
-            #path=os.path.join(os.getcwd(), "records/medical.xlsx")
-            return openpyxl.load_workbook(path)
+            return openpyxl.load_workbook(path_to_file)
         except Exception as e:
             return "error in getWB:"+str(e)
 
@@ -83,12 +81,9 @@ class Service():
             #to get list of saved names and birthdays
             df=pd.read_excel(file, id) 
             name_list = df["ФИО пациента"].tolist() 
-            birth_list = df["Дата рождения"].tolist() 
         
             if(name in name_list): # check if name already exists
-                index = name_list.index(name)
-                if(birth_list[index]==birthday): #check if birthday is the same
-                    return True
+                return True
             else:
                 return False  
         except Exception as e:
@@ -105,7 +100,7 @@ class Service():
                                 file):
         try:
             patient_time = datetime.now()
-            wb = self.getWB()
+            wb = self.getWB(file)
             isUnique = self.isAlredySaved(id, patient_name, patient_birthdate, file)
             if(isUnique):
                 return ("/day/"+id+"/1/"+patient_name)

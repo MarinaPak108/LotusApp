@@ -16,14 +16,14 @@ grownUp = Service.countGrownUp()
 century = Service.countCentury()
 
 ##external path to records folder
-records_path = os.path.join("C:", "records")
+records_path = os.path.join(os.getcwd(), "records")
 folder_path =os.path.join(records_path, day)
-medical_file = os.path.join(records_path, "medical.xlsx")
+medical_file = os.path.join(os.getcwd(), "records/medical.xlsx")
 
 @app.route("/")
 def home():
     try: 
-        wb = Service.getWB()
+        wb = Service.getWB(medical_file)
         printErrorInLoggerThrowException(wb)
         names = wb.sheetnames
         if (day not in names):
@@ -47,7 +47,7 @@ def home():
 @app.route('/assign')
 def my_form():
     try:
-        wb = Service.getWB()
+        wb = Service.getWB(medical_file)
         printErrorInLoggerThrowException(wb)
         isButtonActive=False
         ws = wb['settings']
@@ -63,7 +63,7 @@ def my_form():
 @app.route('/assign', methods=['POST'])
 def my_form_post():
     try:
-        wb = Service.getWB()
+        wb = Service.getWB(medical_file)
         docId = request.form['text']
         printErrorInLoggerThrowException(wb)
         #create new work sheet with today date, add header
@@ -87,7 +87,7 @@ def my_form_post():
 @app.route('/day/<id>/<errid>/<name>')
 def patients(id, errid, name):
     try:
-        wb = Service.getWB()
+        wb = Service.getWB(medical_file)
         error = ""
         printErrorInLoggerThrowException(wb)
         isActiveDay = False
@@ -95,7 +95,7 @@ def patients(id, errid, name):
             isActiveDay = True
         if(errid=="1"):
             app.logger.info('%s def %s : patient %s already exists', layer, request.endpoint , name)
-            error = "ФИО "+name+" с идентичной датой рождения уже существует. Пожалуйста проверьте еще раз данные."
+            error = "ФИО "+name+" уже существует. Пожалуйста проверьте еще раз данные."
         if(id in wb.sheetnames):
             ws = wb[id]  
             patients= Service.fromExcelToList(Patient, ws)
