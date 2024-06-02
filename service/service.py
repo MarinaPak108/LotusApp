@@ -5,15 +5,15 @@ from typing import TypeVar
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 
-from models.patient import Patient
-from models.record import Record
+from model.record import Record
 
 class Service():
-    T = TypeVar('T') 
+    T = TypeVar('T')
     
     def getWB():
         try:
-            path=os.path.join(os.getcwd(), "records/medical.xlsx")
+            path=os.path.join("C:", "records/medical.xlsx")
+            #path=os.path.join(os.getcwd(), "records/medical.xlsx")
             return openpyxl.load_workbook(path)
         except Exception as e:
             return "error in getWB:"+str(e)
@@ -35,10 +35,10 @@ class Service():
         except Exception as e:
             return "error in fromExcelToList:"+str(e)
     
-    def saveRecord(wb,name, new_data):
+    def saveRecord(wb,name, new_data, fiel_path):
         ws=wb[name]
         ws.append(new_data)
-        wb.save("records/medical.xlsx")
+        wb.save(fiel_path)
      
     def countPatients(self, wb, today):
         try: 

@@ -1,0 +1,147 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58335
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-06-02
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:32] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:32] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:32] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def my_form_post : added worksheet (2024-06-02)
+INFO:main:=============> Controller def my_form_post : saved doctor (5) name - Desya_Osipov on day 2024-06-02
+INFO:main:=============> Controller def my_form_post: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:37] "[32mPOST /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 0
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:56] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:26:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 1_fkmj'fdpk saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:27:22] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 1
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:27:22] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:27:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 2_fkmj'fdpk saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:27:51] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : patient fkmj'fdpk already exists
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 1
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:27:51] "GET /day/2024-06-02/1/fkmj'fdpk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:27:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+ERROR:main:Exception on /day/2024-06-02/1/fkmj'fdpk [POST]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: patients_post_error() got an unexpected keyword argument 'errid'
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:28:13] "[35m[1mPOST /day/2024-06-02/1/fkmj'fdpk HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58599
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:13] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 1
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:15] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 2_fkmj'fdpk saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:45] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : patient fkmj'fdpk already exists
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 1
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:45] "GET /day/2024-06-02/1/fkmj'fdpk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:31:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post_error : patient 2_fkmj'fdpk222 saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:02] "[32mPOST /day/2024-06-02/1/fkmj'fdpk HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 2
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:02] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 3_aedf saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:24] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 3
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:25] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-01 equals 7
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:44] "GET /day/2024-06-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 3
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:54] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:32:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 4_jhk saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:08] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 4
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:08] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 5_gvkjhkj saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:20] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:20] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients_post : patient 6_jhblk saved to excel
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:32] "[32mPOST /day/2024-06-02 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 6
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:33] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-01 equals 7
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:44] "GET /day/2024-06-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def patients : number of patients in 2024-06-02 equals 6
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:51] "GET /day/2024-06-02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:33:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58334
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:[Errno 2] No such file or directory: 'C:/phrases/names.xlsx'
+ERROR:main:=============> Controller : in def def home - 
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:36:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:36:10] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:36:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58526
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-06-02
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:22] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:22] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:22] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def my_form_post : added worksheet (2024-06-02)
+INFO:main:=============> Controller def my_form_post : saved doctor (4) name - Klara_Novikova on day 2024-06-02
+INFO:main:=============> Controller def my_form_post: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:27] "[32mPOST /assign HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def home: day - 2024-06-02
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61676
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-06-02
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:54] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:54] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:54] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:55] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:41:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def my_form_post : added worksheet (2024-06-02)
+INFO:main:=============> Controller def my_form_post : saved doctor (4) name - Klara_Novikova on day 2024-06-02
+INFO:main:=============> Controller def my_form_post: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:42:36] "[32mPOST /assign HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def home: day - 2024-06-02
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:42:36] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:42:36] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:42:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:main:=============> Controller def my_form : number of doctors in 2024-06-02 equals 5
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:42:38] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Jun/2024 12:42:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

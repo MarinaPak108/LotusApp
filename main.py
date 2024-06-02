@@ -3,16 +3,22 @@ from flaskwebgui import FlaskUI
 from flask import Flask, redirect, request, render_template
 import logging   
 
-from models.doctor import Doctor
-from models.patient import Patient 
+from model.doctor import Doctor
+from model.patient import Patient 
 from service.service import Service
 
 app = Flask(__name__)
 layer = "=============> Controller"
 day = Service.getDay()
-folder_path =os.path.join("records", day)
+
+#count calender end date for grown ups and children
 grownUp = Service.countGrownUp()
 century = Service.countCentury()
+
+##external path to records folder
+records_path = os.path.join("C:", "records")
+folder_path =os.path.join(records_path, day)
+medical_file = os.path.join(records_path, "medical.xlsx")
 
 @app.route("/")
 def home():
@@ -22,7 +28,7 @@ def home():
         names = wb.sheetnames
         if (day not in names):
             app.logger.info('%s def %s: day - %s', layer, request.endpoint,  day)
-            yesterday_path = os.path.join("records", names[-1])
+            yesterday_path = os.path.join(records_path, names[-1])
             if(os.path.isdir(yesterday_path)):
                 yesterday_path = os.path.join(yesterday_path, "medical.xlsx")
                 wb.save(yesterday_path) 
@@ -69,9 +75,10 @@ def my_form_post():
         docName = wsDoc[docId][1].value
         
         new_data = [day, docName, -1, docId]
-        ws = wb["current"]
-        ws.append(new_data)
-        wb.save("records/medical.xlsx")
+        Service.saveRecord(wb, "current", new_data, medical_file)
+        #ws = wb["current"]
+        #ws.append(new_data)
+        #wb.save(medical_file)
         app.logger.info('%s def %s : saved doctor (%s) name - %s on day %s', layer,request.endpoint, docId, docName, day)
         app.logger.info('%s def %s: saved document with new data', layer,request.endpoint)
         return redirect("/")
@@ -133,7 +140,7 @@ def patients_post(id):
            return  redirectToErrorPage(str(e), "def "+request.endpoint)
 
 @app.route('/day/<id>/<errid>/<name>', defaults={'errid': 0, 'name': None},  methods=['POST'])
-def patients_post_error(id):
+def patients_post_error(id, errid, name):
     try:
         patient_id = request.form['id']
         patient_name = request.form['name']
