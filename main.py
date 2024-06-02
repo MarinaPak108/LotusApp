@@ -36,7 +36,7 @@ def home():
         else:
             ws = wb["current"]
             header = [cell.value for cell in ws[1]]
-            records = Service.countPatients(Service, wb, day)
+            records = Service.countPatients(Service, wb, day, medical_file)
             printErrorInLoggerThrowException(records)
         
             return render_template('start.html', title="Список отчетов", tab = header, records = records)
@@ -66,19 +66,17 @@ def my_form_post():
         wb = Service.getWB()
         docId = request.form['text']
         printErrorInLoggerThrowException(wb)
+        #create new work sheet with today date, add header
         ws_new = wb.create_sheet(day) 
         ws_header = ["ID", "Время","ФИО пациента", "М\Ж\Р", "Дата рождения", "Причина", "Давление"]
         ws_new.append(ws_header)
         app.logger.info('%s def %s : added worksheet (%s)', layer,request.endpoint ,day)
-        
+        #get doc id from settings
         wsDoc = wb["settings"]
         docName = wsDoc[docId][1].value
-        
+        #save at current work sheet doctor infomation for today
         new_data = [day, docName, -1, docId]
         Service.saveRecord(wb, "current", new_data, medical_file)
-        #ws = wb["current"]
-        #ws.append(new_data)
-        #wb.save(medical_file)
         app.logger.info('%s def %s : saved doctor (%s) name - %s on day %s', layer,request.endpoint, docId, docName, day)
         app.logger.info('%s def %s: saved document with new data', layer,request.endpoint)
         return redirect("/")
@@ -132,7 +130,8 @@ def patients_post(id):
                                             patient_type,
                                             patient_birthdate,
                                             patient_reason,
-                                            patient_pressure)
+                                            patient_pressure,
+                                            medical_file)
         printErrorInLoggerThrowException(url)
         app.logger.info('%s def %s : patient %s_%s saved to excel', layer, request.endpoint , patient_id, patient_name)
         return redirect(url)
@@ -155,7 +154,8 @@ def patients_post_error(id, errid, name):
                                             patient_type,
                                             patient_birthdate,
                                             patient_reason,
-                                            patient_pressure)
+                                            patient_pressure,
+                                            medical_file)
         printErrorInLoggerThrowException(url)
         app.logger.info('%s def %s : patient %s_%s saved to excel', layer, request.endpoint , patient_id, patient_name)
         return redirect(url)
