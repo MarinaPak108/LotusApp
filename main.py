@@ -126,7 +126,8 @@ def patients_post(id):
                                             patient_pressure,
                                             patient_doc,
                                             patient_docId,
-                                            medical_file)
+                                            medical_file,
+                                            folder_path)
         printErrorInLoggerThrowException(url)
         app.logger.info('%s def %s : patient %s_%s saved to excel', layer, request.endpoint , patient_id, patient_name)
         return redirect(url)

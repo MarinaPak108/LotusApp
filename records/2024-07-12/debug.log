@@ -1,0 +1,115 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51409
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-12
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:52:00] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-12)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:52:00] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:52:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:52:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 0
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:52:31] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_iurhosthk saved to excel
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:53:10] "[32mPOST /day/2024-07-12 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:53:10] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51651
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:56:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:56:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:56:05] "GET /day/2024-07-12 HTTP/1.1" 200 -
+ERROR:main:Service msg: error in checkSavePatientGetPage:Cannot convert <model.doctor.Doctor object at 0x0000020F5FE2C190> to Excel
+ERROR:main:=============> Controller : in def def patients_post - 
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:56:22] "POST /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51739
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:57:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:57:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:57:35] "GET /day/2024-07-12 HTTP/1.1" 200 -
+ERROR:main:Service msg: error in checkSavePatientGetPage:Cannot convert <model.doctor.Doctor object at 0x000001B5158A2770> to Excel
+ERROR:main:=============> Controller : in def def patients_post - 
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 05:57:51] "POST /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51897
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:02:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:02:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51920
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:03:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:03:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:03:14] "GET /day/2024-07-12 HTTP/1.1" 200 -
+ERROR:main:Service msg: error in checkSavePatientGetPage:Cannot convert ('Karp_Kuzmin', 'overall') to Excel
+ERROR:main:=============> Controller : in def def patients_post - 
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:03:32] "POST /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52074
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:10:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:10:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 1
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:11:03] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_dxdjkughi saved to excel
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:11:19] "[32mPOST /day/2024-07-12 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 2
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:11:19] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 06:11:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51192
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:36:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:36:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 2
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:36:44] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 3_jykugk saved to excel
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:37:29] "[32mPOST /day/2024-07-12 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 3
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:37:29] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51506
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:55:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:55:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 3
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:55:27] "GET /day/2024-07-12 HTTP/1.1" 200 -
+ERROR:main:Service msg: error in checkSavePatientGetPage:'str' object cannot be interpreted as an integer
+ERROR:main:=============> Controller : in def def patients_post - 
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:56:12] "POST /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51605
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:58:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 19:58:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 3
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:00:41] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_patient name saved to excel
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:01:45] "[32mPOST /day/2024-07-12 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 4
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:01:45] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51964
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:05:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:05:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 4
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:05:11] "GET /day/2024-07-12 HTTP/1.1" 200 -
+ERROR:main:=============> Controller : in def def patients_post - 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:05:25] "POST /day/2024-07-12 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52026
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:06:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:06:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 4
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:06:20] "GET /day/2024-07-12 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_patient test saved to excel
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:07:41] "[32mPOST /day/2024-07-12 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-12 equals 5
+INFO:werkzeug:127.0.0.1 - - [12/Jul/2024 20:07:41] "GET /day/2024-07-12 HTTP/1.1" 200 -

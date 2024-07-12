@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import openpyxl
 from datetime import date, datetime
@@ -7,11 +8,14 @@ from dateutil.relativedelta import relativedelta
 
 from model.record import Record
 
+from mailmerge import MailMerge
+from datetime import date
+
 from model.doctor import Doctor
 from model.patient import Patient 
 
 class Service():
-    T = TypeVar('T')
+    T = TypeVar('T')   
     
     def getWB(path_to_file):
         try:
@@ -35,6 +39,15 @@ class Service():
             return listObjects
         except Exception as e:
             return "error in fromExcelToList:"+str(e)
+        
+    def fromExcelToModel(T, ws):
+        try:
+            args =[cell.value for cell in ws]
+            typeObject = T(*args)
+            return typeObject
+        except Exception as e:
+            return "error in fromExcelToModel:"+str(e)
+            
     
     def saveRecord(wb,name, new_data, file_path):
         ws=wb[name]
@@ -102,15 +115,17 @@ class Service():
                                 patient_pressure,
                                 patient_doc,
                                 patient_docId,
-                                file):
+                                file,
+                                folder):
         try:
             patient_time = datetime.now()
             wb = self.getWB(file)
-            isUnique = self.isAlredySaved(id, patient_name, patient_birthdate, file)
-            if(isUnique):
+            isNotUnique = self.isAlredySaved(id, patient_name, patient_birthdate, file)
+            if(isNotUnique):
                 return ("/day/"+id+"/1/"+patient_name)
             elif (id in wb.sheetnames):
                 new_data = [patient_id, patient_time, patient_name,patient_doc, int(patient_docId), patient_type, patient_birthdate, patient_reason, patient_pressure]
+                self.formFileSave(self, id, patient_id, patient_name, patient_pressure, patient_birthdate, patient_reason, patient_doc, folder)
                 self.saveRecord(wb, id, new_data, file)
                 return ("/day/"+id)
             else:
@@ -118,19 +133,38 @@ class Service():
         except Exception as e:
             return "error in checkSavePatientGetPage:"+str(e)  
     
+    def formFileSave(self, id, patient_id, patient_name, patient_pressure, patient_bday, patient_reason, doctor_name, folder):
+        template = "records/form.docx"
+        document = MailMerge(template)
+        document.merge(
+          date = '{:%d-%b-%Y}'.format(date.today()),
+          condition = patient_reason,
+          patientBday = patient_bday,
+          doctorAssistant = "assistant",
+          doctorSpec = "spec",
+          patientPressure = patient_pressure,
+          doctorName = doctor_name,
+          patientName = patient_name,
+          number =  patient_id
+        )
+        ##form path to folder:
+        doc = os.path.join(folder,str(id)+'_'+patient_name+'.docx')
+        print('here')
+        document.write(doc)
+    
     def countGrownUp():
         yrs = date.today()  - relativedelta(years=18)  
         return str(yrs)  
     def countCentury():
         yrs = date.today()  - relativedelta(years=100)  
         return str(yrs)          
-       
-       
+              
     def getDocName(self, id, file):
         try:
             wb = self.getWB(file)    
             wsDoc = wb["settings"]
             docName = wsDoc[id][1].value
+            #docSpec = wsDoc[id][2].value
             return docName
         except Exception as e:
             return "error in getDocName:"+str(e) 
