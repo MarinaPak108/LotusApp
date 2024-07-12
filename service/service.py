@@ -7,6 +7,9 @@ from dateutil.relativedelta import relativedelta
 
 from model.record import Record
 
+from model.doctor import Doctor
+from model.patient import Patient 
+
 class Service():
     T = TypeVar('T')
     
@@ -66,10 +69,10 @@ class Service():
                         records[i-2].woman = woman_num
                         records[i-2].men = men_num
                         #save all info           
-                        ws.cell(row=i, column=3).value = patients_num
-                        ws.cell(row=i, column=5).value = child_num
-                        ws.cell(row=i, column=6).value = woman_num
-                        ws.cell(row=i, column=7).value = men_num
+                        ws.cell(row=i, column=2).value = patients_num
+                        ws.cell(row=i, column=3).value = child_num
+                        ws.cell(row=i, column=4).value = woman_num
+                        ws.cell(row=i, column=5).value = men_num
         except Exception as e:
             return "error in countPatients:"+str(e)
        
@@ -97,6 +100,8 @@ class Service():
                                 patient_birthdate, 
                                 patient_reason,
                                 patient_pressure,
+                                patient_doc,
+                                patient_docId,
                                 file):
         try:
             patient_time = datetime.now()
@@ -105,7 +110,7 @@ class Service():
             if(isUnique):
                 return ("/day/"+id+"/1/"+patient_name)
             elif (id in wb.sheetnames):
-                new_data = [patient_id, patient_time, patient_name, patient_type, patient_birthdate, patient_reason, patient_pressure]
+                new_data = [patient_id, patient_time, patient_name,patient_doc, int(patient_docId), patient_type, patient_birthdate, patient_reason, patient_pressure]
                 self.saveRecord(wb, id, new_data, file)
                 return ("/day/"+id)
             else:
@@ -119,8 +124,24 @@ class Service():
     def countCentury():
         yrs = date.today()  - relativedelta(years=100)  
         return str(yrs)          
-                
+       
+       
+    def getDocName(self, id, file):
+        try:
+            wb = self.getWB(file)    
+            wsDoc = wb["settings"]
+            docName = wsDoc[id][1].value
+            return docName
+        except Exception as e:
+            return "error in getDocName:"+str(e) 
 
+    def sortDoctors (docs, patient):
+        for doc in docs:
+            id = doc.id
+            sorted_docs=[p for p in patient if p.docId == id]
+            doc.num = len(sorted_docs)
+        return docs
+        
     
             
     

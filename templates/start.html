@@ -12,7 +12,6 @@
         <tr style="padding: 3px;
         border: 1px solid black;">
           <th style = "  border: 1px solid black;">ВРЕМЯ</th>
-          <th style = "  border: 1px solid black;">ФИО врача</th>
           <th style = "  border: 1px solid black;">Пациенты</th>
           <th style = "  border: 1px solid black;">Р</th>
           <th style = "  border: 1px solid black;">Ж</th>
@@ -25,7 +24,6 @@
         {% for record in records %}
           <tr>
             <td style = "  border: 1px solid black;">{{ record.date}}</td>
-            <td style = "  border: 1px solid black;">{{ record.doctor}}</td>
             <td style = "  border: 1px solid black;">{{ record.patients }}</td>
             <td style = "  border: 1px solid black;">{{ record.child }}</td>
             <td style = "  border: 1px solid black;">{{ record.woman }}</td>

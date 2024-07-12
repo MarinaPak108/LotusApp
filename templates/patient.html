@@ -14,6 +14,7 @@
           <th style = "  border: 1px solid black;">Номер</th>
           <th style = "  border: 1px solid black;">Время приема</th>
           <th style = "  border: 1px solid black;">ФИО Пациента</th>
+          <th style = "  border: 1px solid black;">Врач</th>
           <th style = "  border: 1px solid black;">М\Ж\Р</th>
           <th style = "  border: 1px solid black;">Дата рождения</th>
           <th style = "  border: 1px solid black;">Причина</th>
@@ -27,6 +28,7 @@
             <td style = "  border: 1px solid black;">{{ patient.id}}</td>
             <td style = "  border: 1px solid black;">{{ patient.time}}</td>
             <td style = "  border: 1px solid black;">{{ patient.patient}}</td>
+            <td style = "  border: 1px solid black;">{{ patient.doc}}</td>
             <td style = "  border: 1px solid black;">{{ patient.type }}</td>
             <td style = "  border: 1px solid black;">{{ patient.birthdate }}</td>
             <td style = "  border: 1px solid black;">{{ patient.reason }}</td>
@@ -41,9 +43,23 @@
   <h8 style = "color:red">{{error}}</h8>
   {% endif%}
   <div>
-    <h2>Введите Данные Пациента № {{length}}</h2>
     <form method="POST" >
-      <input type="hidden" value= {{length}} name = "id"  readonly>
+      <div>
+        <input type="hidden" list="userA" id = "docid"/>
+        <select id="userA" name="doc" onchange=updateNumFuncction()>
+            <option value="" selected>выберите врача/категория/кол-во</option>
+            {% for doctor in doctors %}
+            <option value = {{doctor.id}} data-rc={{doctor.num}}  > {{doctor.name}} / {{doctor.spec}} / {{doctor.num}}
+            </option>
+            {% endfor %}
+        </select>
+        <input name="reason" placeholder="Тема беседы">
+        <input name="pressure" placeholder="Давление">
+    </div>
+    <div>
+      <p id="demo"></p>
+    </div>
+      <input type="hidden" name = "id" id="id">
       <input name="name" placeholder="ФИО пациента">
       <input type="hidden" list="type">
       <select name="type" id="type">
@@ -54,8 +70,7 @@
       </select>
       <input type="text" name="birthdate" id="bday" placeholder="Дата рождения"
         onfocus="myFunction(this)">
-      <input name="reason" placeholder="Тема беседы">
-      <input name="pressure" placeholder="Давление">
+      
       <div>
         <input type="submit">
       </div>
@@ -66,6 +81,19 @@
 {% block javascripts_local %}
   {{ super() }} {# to load the parent assets #}
   <script>
+    var selection = document.getElementById("userA")
+    var patientId = document.getElementById("id")
+
+    selection.onchange = function(event){
+      if(selection.value !== ""){
+        var rc = event.target.options[event.target.selectedIndex].dataset.rc;
+        var num = parseInt(rc) + 1;
+        patientId.value = num;
+        document.getElementById("demo").innerHTML = "Данные для пациента № " + num;
+
+      }
+    }
+
     
     if({{ isActive|tojson }}){ 
       var pBody = document.querySelector('#data');

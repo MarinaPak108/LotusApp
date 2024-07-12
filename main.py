@@ -20,6 +20,7 @@ records_path = os.path.join(os.getcwd(), "records")
 folder_path =os.path.join(records_path, day)
 medical_file = os.path.join(os.getcwd(), "records/medical.xlsx")
 
+
 @app.route("/")
 def home():
     try: 
@@ -49,39 +50,19 @@ def my_form():
     try:
         wb = Service.getWB(medical_file)
         printErrorInLoggerThrowException(wb)
-        isButtonActive=False
-        ws = wb['settings']
-        doctors = Service.fromExcelToList(Doctor, ws)
-        printErrorInLoggerThrowException(doctors)
-        app.logger.info('%s def %s : number of doctors in %s equals %s', layer, request.endpoint, day, len(doctors))
-        if (day not in wb.sheetnames):
-            isButtonActive = True
-        return render_template('assign.html', doctors = doctors, isActive = isButtonActive)
-    except Exception as e:
-            return redirectToErrorPage(str(e), "def "+request.endpoint)
-        
-@app.route('/assign', methods=['POST'])
-def my_form_post():
-    try:
-        wb = Service.getWB(medical_file)
-        docId = request.form['text']
-        printErrorInLoggerThrowException(wb)
         #create new work sheet with today date, add header
         ws_new = wb.create_sheet(day) 
-        ws_header = ["ID", "Время","ФИО пациента", "М\Ж\Р", "Дата рождения", "Причина", "Давление"]
+        ws_header = ["ID", "Время","ФИО пациента", "Врач", "Врач_Индекс", "М\Ж\Р", "Дата рождения", "Причина", "Давление"]
         ws_new.append(ws_header)
         app.logger.info('%s def %s : added worksheet (%s)', layer,request.endpoint ,day)
-        #get doc id from settings
-        wsDoc = wb["settings"]
-        docName = wsDoc[docId][1].value
         #save at current work sheet doctor infomation for today
-        new_data = [day, docName, -1, docId]
+        new_data = [day, -1]
         Service.saveRecord(wb, "current", new_data, medical_file)
-        app.logger.info('%s def %s : saved doctor (%s) name - %s on day %s', layer,request.endpoint, docId, docName, day)
         app.logger.info('%s def %s: saved document with new data', layer,request.endpoint)
         return redirect("/")
     except Exception as e:
         return  redirectToErrorPage(str(e), "def "+request.endpoint)
+    
         
 @app.route('/day/<id>', defaults={'errid': 0, 'name': None})
 @app.route('/day/<id>/<errid>/<name>')
@@ -91,21 +72,31 @@ def patients(id, errid, name):
         error = ""
         printErrorInLoggerThrowException(wb)
         isActiveDay = False
+                        
         if(id == day):
             isActiveDay = True
         if(errid=="1"):
             app.logger.info('%s def %s : patient %s already exists', layer, request.endpoint , name)
             error = "ФИО "+name+" уже существует. Пожалуйста проверьте еще раз данные."
         if(id in wb.sheetnames):
-            ws = wb[id]  
+            
+            wsd = wb['settings']
+            docs = Service.fromExcelToList(Doctor, wsd)
+            printErrorInLoggerThrowException(docs)
+
+            ws = wb[id]
             patients= Service.fromExcelToList(Patient, ws)
             printErrorInLoggerThrowException(patients)
+            
+            doctors = Service.sortDoctors(docs, patients)
+            
             app.logger.info('%s def %s : number of patients in %s equals %s', layer, request.endpoint, id, len(patients))
             return render_template('patient.html', 
                                     patients = patients, 
                                     day = id, 
+                                    doctors = doctors,
                                     isActive = isActiveDay, 
-                                    length = len(patients)+1, 
+                                    length = len(patients), 
                                     grown = grownUp,
                                     century = century,
                                     error = error)
@@ -123,6 +114,8 @@ def patients_post(id):
         patient_birthdate = request.form['birthdate']
         patient_reason = request.form['reason']
         patient_pressure = request.form['pressure']
+        patient_docId = request.form['doc']
+        patient_doc = Service.getDocName(Service, patient_docId, medical_file)
         url = Service.checkSavePatientGetPage(Service,
                                             id,
                                             patient_id,
@@ -131,6 +124,8 @@ def patients_post(id):
                                             patient_birthdate,
                                             patient_reason,
                                             patient_pressure,
+                                            patient_doc,
+                                            patient_docId,
                                             medical_file)
         printErrorInLoggerThrowException(url)
         app.logger.info('%s def %s : patient %s_%s saved to excel', layer, request.endpoint , patient_id, patient_name)
@@ -147,6 +142,8 @@ def patients_post_error(id, errid, name):
         patient_birthdate = request.form['birthdate']
         patient_reason = request.form['reason']
         patient_pressure = request.form['pressure']
+        patient_docId = request.form['doc']
+        patient_doc = Service.getDocName(Service, patient_docId, medical_file)
         url = Service.checkSavePatientGetPage(Service,
                                             id,
                                             patient_id,
@@ -155,6 +152,8 @@ def patients_post_error(id, errid, name):
                                             patient_birthdate,
                                             patient_reason,
                                             patient_pressure,
+                                            patient_doc,
+                                            patient_docId,
                                             medical_file)
         printErrorInLoggerThrowException(url)
         app.logger.info('%s def %s : patient %s_%s saved to excel', layer, request.endpoint , patient_id, patient_name)
