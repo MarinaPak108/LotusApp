@@ -147,8 +147,9 @@ class Service():
           patientName = patient_name,
           number =  patient_id
         )
+        p_name = patient_name.replace(" ", "_")
         ##form path to folder:
-        doc = os.path.join(folder,str(id)+'_'+patient_name+'.docx')
+        doc = os.path.join(folder,patient_id+'.'+doctor_name+'_('+p_name+').docx')
         print('here')
         document.write(doc)
     

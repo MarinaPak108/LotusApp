@@ -1,14 +1,54 @@
 {% extends 'base.html' %} 
 {% block title %}PATIENTS - {{day}} {% endblock %}
+{% block style_local %}
+  {{ super() }} {# to load the parent assets #}
+  <style>
+    div {
+      padding:10px;
+    }
+
+    .filter-table {
+      border-collapse: collapse;
+    }
+    
+    .filter-table {
+      margin: auto;
+      padding:20px;
+      width: 650px;
+      display: block;
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #fff;
+    }
+    
+    .filter-table thead {
+      border-bottom: thin solid grey;
+    }
+    
+    .filter-table th, .filter-table td {
+      padding: 0.25em 0.5em;
+    }
+    
+    .filter-table th {
+      background: #CCC;
+    }
+    
+    .hidden-row {
+      display: none;
+    }
+  </style>
+{% endblock %}  
 {% block content %}
-  <div style="padding:10px;">
-    <table id="data" style="margin: auto;
-    padding:20px;
-    width: 650px;
-    display: block;
-    height: 300px;
-    overflow-y: scroll;
-    border: 1px solid #fff;">
+  <div>
+    <select id="filter" data-field="Врач">
+      <option value="" selected>все</option>
+      {% for doctor in doctors %}
+      <option value ={{doctor.name}}> {{doctor.name}} </option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <table id="data" class="filter-table">
       <thead>
         <tr>
           <th style = "  border: 1px solid black;">Номер</th>
@@ -25,14 +65,14 @@
       font-weight: normal; color:white">
         {% for patient in patients %}
           <tr>
-            <td style = "  border: 1px solid black;">{{ patient.id}}</td>
-            <td style = "  border: 1px solid black;">{{ patient.time}}</td>
-            <td style = "  border: 1px solid black;">{{ patient.patient}}</td>
-            <td style = "  border: 1px solid black;">{{ patient.doc}}</td>
-            <td style = "  border: 1px solid black;">{{ patient.type }}</td>
-            <td style = "  border: 1px solid black;">{{ patient.birthdate }}</td>
-            <td style = "  border: 1px solid black;">{{ patient.reason }}</td>
-            <td style = "  border: 1px solid black;">{{ patient.pressure }}</td>
+            <td style = "  border: 1px solid black;">{{patient.id}}</td>
+            <td style = "  border: 1px solid black;">{{patient.time}}</td>
+            <td style = "  border: 1px solid black;">{{patient.patient}}</td>
+            <td style = "  border: 1px solid black;">{{patient.doc}}</td>
+            <td style = "  border: 1px solid black;">{{patient.type }}</td>
+            <td style = "  border: 1px solid black;">{{patient.birthdate }}</td>
+            <td style = "  border: 1px solid black;">{{patient.reason }}</td>
+            <td style = "  border: 1px solid black;">{{patient.pressure }}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -111,5 +151,40 @@
         x.max = {{ day|tojson }};
       }
       }
+
+      {# to filter #}
+      const
+        table = document.querySelector('.filter-table'),
+        filterState = {};
+
+      const dataFromRow = (row, headers) =>
+        Object.fromEntries([...row.querySelectorAll('td')]
+          .map((td, index) => [headers[index], td.textContent]));
+
+      const matchesCriteria = (rowData, filters) =>
+        filters.every(([key, value]) => rowData[key] === value);
+
+      const refresh = () => {
+        const
+          headers = [...table.querySelectorAll('thead th')].map(th => th.textContent),
+          filters = Object.entries(filterState),
+          showAll = filters.length === 0;
+        table.querySelectorAll('tbody tr').forEach(row => {
+          const show = showAll || matchesCriteria(dataFromRow(row, headers), filters);
+          row.classList.toggle('hidden-row', !show);
+        });
+      };
+
+      const handleFilterChange = (e) => {
+        const
+          field = e.target.dataset.field,
+          value = e.target.value;
+        if (value) { filterState[field] = value; }
+        else { delete filterState[field]; }
+        refresh();
+      };
+
+      document.querySelectorAll('.filter').forEach(filter =>
+        filter.addEventListener('change', handleFilterChange));
   </script>
 {% endblock %}

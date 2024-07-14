@@ -1,0 +1,244 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62178
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-13
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:30:53] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-13)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:30:53] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:30:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:30:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:30:56] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:64498
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:31:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:31:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 09:32:00] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56824
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:=============> Controller : in def def home - there is no parent block called 'style'.
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 43, in home
+    return render_template('start.html', title="Список отчетов", tab = header, records = records)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+  File "D:\LotusApp\.venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\LotusApp\.venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\LotusApp\templates\start.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "d:\LotusApp\templates\base.html", line 2, in top-level template code
+    {% block style %}
+  File "d:\LotusApp\templates\base.html", line 4, in block 'style'
+    {{ super() }}
+  File "D:\LotusApp\.venv\lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: there is no parent block called 'style'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 46, in home
+    return redirectToErrorPage(str(e), "def "+request.endpoint)
+  File "d:\LotusApp\main.py", line 174, in redirectToErrorPage
+    return render_template('error.html')
+  File "D:\LotusApp\.venv\lib\site-packages\flask\templating.py", line 152, in render_template
+    return _render(app, template, context)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\templating.py", line 133, in _render
+    rv = template.render(context)
+  File "D:\LotusApp\.venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "D:\LotusApp\.venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "d:\LotusApp\templates\error.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "d:\LotusApp\templates\base.html", line 2, in top-level template code
+    {% block style %}
+  File "d:\LotusApp\templates\base.html", line 4, in block 'style'
+    {{ super() }}
+  File "D:\LotusApp\.venv\lib\site-packages\jinja2\utils.py", line 83, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+jinja2.exceptions.UndefinedError: there is no parent block called 'style'.
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:44:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:44:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57039
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:46:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:46:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:46:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57502
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:51:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:51:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:51:57] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57972
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:55:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:55:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 14:55:51] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62144
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:42:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:42:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:43:20] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:45:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62469
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:45:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:45:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62556
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:46:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 15:46:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63706
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:02:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:02:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:02:07] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63815
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:03:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:03:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:03:12] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50175
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:19:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:19:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 0
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:19:30] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_patient test saved to excel
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:19:57] "[32mPOST /day/2024-07-13 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 1
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:19:57] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_patient test saved to excel
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:20:18] "[32mPOST /day/2024-07-13 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : patient patient test already exists
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 1
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:20:18] "GET /day/2024-07-13/1/patient%20test HTTP/1.1" 200 -
+ERROR:main:=============> Controller : in def def patients_post_error - Service.checkSavePatientGetPage() missing 1 required positional argument: 'folder'
+ERROR:main:Exception on /day/2024-07-13/1/patient test [POST]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'patients_post_error' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:20:40] "[35m[1mPOST /day/2024-07-13/1/patient%20test HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50487
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:21:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:21:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 1
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:21:44] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_opatient name saved to excel
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:22:07] "[32mPOST /day/2024-07-13 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 2
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:22:07] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50930
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:23:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:23:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 2
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:23:31] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51164
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:24:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:24:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 2
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:24:41] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52766
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:32:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:32:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 2
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 16:32:58] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58349
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 19:56:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 19:56:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 2
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 19:56:56] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_patient test name saved to excel
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 19:57:33] "[32mPOST /day/2024-07-13 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 3
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 19:57:33] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61126
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:03:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:03:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 3
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:03:44] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 3_Irina Vorontsova Klementjevna saved to excel
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:04:32] "[32mPOST /day/2024-07-13 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 4
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:04:32] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61744
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 4
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:05] "GET /day/2024-07-13 HTTP/1.1" 200 -
+ERROR:main:=============> Controller : in def def patients_post - 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:20] "POST /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61877
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 4
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:07:27] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_Kiril Vodjanow Viktorovitch saved to excel
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:08:25] "[32mPOST /day/2024-07-13 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 5
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:08:25] "GET /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63322
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:16:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:16:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-13 equals 5
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:16:42] "GET /day/2024-07-13 HTTP/1.1" 200 -
+ERROR:main:=============> Controller : in def def patients_post - 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:16:48] "POST /day/2024-07-13 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Jul/2024 20:16:50] "GET / HTTP/1.1" 200 -

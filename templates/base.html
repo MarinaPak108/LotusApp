@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<style>
+{% block style %}
+{% block style_local %}{% endblock %}
+  <style>
     .topnav {
       overflow: hidden;
       background-color: #333;
@@ -24,6 +26,7 @@
       color: white;
     }
   </style>
+  {% endblock %}
   <head>
     <title>{% block title %}  -LOTUS{% endblock %}</title>
   </head>
