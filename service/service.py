@@ -1,4 +1,3 @@
-from __future__ import print_function
 import os
 import openpyxl
 from datetime import date, datetime
@@ -8,8 +7,7 @@ from dateutil.relativedelta import relativedelta
 
 from model.record import Record
 
-from mailmerge import MailMerge
-from datetime import date
+
 
 from model.doctor import Doctor
 from model.patient import Patient 
@@ -124,8 +122,8 @@ class Service():
             if(isNotUnique):
                 return ("/day/"+id+"/1/"+patient_name)
             elif (id in wb.sheetnames):
-                new_data = [patient_id, patient_time, patient_name,patient_doc, int(patient_docId), patient_type, patient_birthdate, patient_reason, patient_pressure]
-                self.formFileSave(self, id, patient_id, patient_name, patient_pressure, patient_birthdate, patient_reason, patient_doc, folder)
+                new_data = [patient_id, patient_time, patient_name,patient_doc.name, int(patient_docId), patient_type, patient_birthdate, patient_reason, patient_pressure]
+                self.formFileSave(self, patient_id, patient_name, patient_pressure, patient_birthdate, patient_reason, patient_doc, folder)
                 self.saveRecord(wb, id, new_data, file)
                 return ("/day/"+id)
             else:
@@ -133,26 +131,42 @@ class Service():
         except Exception as e:
             return "error in checkSavePatientGetPage:"+str(e)  
     
-    def formFileSave(self, id, patient_id, patient_name, patient_pressure, patient_bday, patient_reason, doctor_name, folder):
-        template = "records/form.docx"
-        document = MailMerge(template)
-        document.merge(
-          date = '{:%d-%b-%Y}'.format(date.today()),
-          condition = patient_reason,
-          patientBday = patient_bday,
-          doctorAssistant = "assistant",
-          doctorSpec = "spec",
-          patientPressure = patient_pressure,
-          doctorName = doctor_name,
-          patientName = patient_name,
-          number =  patient_id
-        )
-        p_name = patient_name.replace(" ", "_")
-        ##form path to folder:
-        doc = os.path.join(folder,patient_id+'.'+doctor_name+'_('+p_name+').docx')
-        print('here')
-        document.write(doc)
-    
+    def formFileSave(self, patient_id, patient_name, patient_pressure, patient_bday, patient_reason, doctor, folder):
+        try:
+            template = "records/card.xlsx"
+            wb= self.getWB(template)
+            ws = wb['form']
+            #fill doc related fields:
+            ##doc name
+            ws.cell(row=4, column=7).value=doctor.name
+            ##service date
+            ws.cell(row=5, column=7).value= '{:%d-%b-%Y}'.format(date.today())
+            ##doc spec
+            ws.cell(row=6, column=7).value= doctor.spec
+            ##nurse
+            ws.cell(row=7, column=7).value= "nurse"
+            
+            #fill patient related data:
+            ## nomer talona
+            ws.cell(row=11, column=3).value= patient_id
+            ## patient name
+            ws.cell(row=12, column=3).value= patient_name
+            ## patient bday
+            ws.cell(row=13, column=3).value= patient_bday
+            ## patient pressure
+            ws.cell(row=14, column=3).value= patient_pressure    
+            ## patient reason
+            ws.cell(row=16, column=3).value= patient_reason       
+            
+            p_name = patient_name.replace(" ", "_")
+            ##form path to folder:
+            doc = os.path.join(folder,patient_id+'.'+doctor.name+'_('+p_name+').xlsx')
+            wb.save(doc)
+            ##print file
+            os.startfile(doc, "print")
+        except Exception as e:
+            return "error in formFileSave:"+str(e) 
+            
     def countGrownUp():
         yrs = date.today()  - relativedelta(years=18)  
         return str(yrs)  
@@ -165,8 +179,9 @@ class Service():
             wb = self.getWB(file)    
             wsDoc = wb["settings"]
             docName = wsDoc[id][1].value
-            #docSpec = wsDoc[id][2].value
-            return docName
+            docSpec = wsDoc[id][2].value
+            doc = Doctor(id=id, name=docName, spec=docSpec)
+            return doc
         except Exception as e:
             return "error in getDocName:"+str(e) 
 

@@ -30,7 +30,8 @@ def home():
         if (day not in names):
             app.logger.info('%s def %s: day - %s', layer, request.endpoint,  day)
             yesterday_path = os.path.join(records_path, names[-1])
-            if(os.path.isdir(yesterday_path)):
+            if(os.path.isdir
+               (yesterday_path)):
                 yesterday_path = os.path.join(yesterday_path, "medical.xlsx")
                 wb.save(yesterday_path) 
             return redirect('/assign')
