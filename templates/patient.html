@@ -33,7 +33,7 @@
           <th>Врач <select  id="filter" style='display:inline-block' onchange="filterTable()">
             <option value="all" selected>All</option>
             {% for doctor in doctors %}
-            <option value ={{doctor.name}}> {{doctor.name}} </option>
+            <option value ={{doctor.id}}> {{doctor.name}} </option>
             {% endfor %}
         </select>
       </th>
@@ -46,7 +46,7 @@
       <tbody style="text-align: center;
       font-weight: normal; color:white">
         {% for patient in patients %}
-          <tr data-category="{{patient.doc}}">
+          <tr data-category="{{patient.docId}}">
             <td>{{patient.id}}</td>
             <td>{{patient.time}}</td>
             <td>{{patient.patient}}</td>
@@ -65,24 +65,24 @@
   <h8 style = "color:red">{{error}}</h8>
   {% endif%}
   <div>
-    <form method="POST" >
+    <form method="POST" id="form1">
       <div>
         <input type="hidden" list="userA" id = "docid"/>
         <select id="userA" name="doc" onchange=updateNumFuncction()>
-            <option value="" selected>выберите врача/категория/кол-во</option>
+            <option selected disabled>выберите врача/категория/кол-во</option>
             {% for doctor in doctors %}
             <option value = {{doctor.id}} data-rc={{doctor.num}}  > {{doctor.name}} / {{doctor.spec}} / {{doctor.num}}
             </option>
             {% endfor %}
         </select>
-        <input name="reason" placeholder="Тема беседы">
-        <input name="pressure" placeholder="Давление">
+        <input name="reason" id = "reason" placeholder="Тема беседы">
+        <input name="pressure" id = "pressure" placeholder="Давление">
     </div>
     <div>
       <p id="demo"></p>
     </div>
       <input type="hidden" name = "id" id="id">
-      <input name="name" placeholder="ФИО пациента">
+      <input name="name" id = "pname" placeholder="ФИО пациента">
       <input type="hidden" list="type">
       <select name="type" id="type">
         <option selected disabled>выберите тип пациента</option>
@@ -94,7 +94,7 @@
         onfocus="myFunction(this)">
       
       <div>
-        <input type="submit">
+        <button class="button" type="button"  onclick="checkIfEmpty()">ЗАПИСАТЬ К ВРАЧУ</button>
       </div>
     </form>
   </div>
@@ -123,16 +123,16 @@
     }
     
     function myFunction(x) {
-      var type = document.getElementById("type");
-      x.type = "date";
-      x.min = {{ century|tojson }};
-      if(type.value == "М" || type.value == "Ж"){
-        x.max = {{ grown|tojson }};
-      }
-      else{
-        x.max = {{ day|tojson }};
-      }
-      }
+        var type = document.getElementById("type");
+        x.type = "date";
+        x.min = {{ century|tojson }};
+        if(type.value == "М" || type.value == "Ж"){
+          x.max = {{ grown|tojson }};
+        }
+        else{
+          x.max = {{ day|tojson }};
+        }
+    }
 
       {# to filter #}
       function filterTable() {
@@ -148,6 +148,31 @@
                 rows[i].style.display = 'none';
             }
         }
-    }
+    
+      }
+
+      function checkIfEmpty(){
+        var doc = document.getElementById("userA").value
+        var reason = document.getElementById("reason").value 
+        var pressure = document.getElementById("pressure").value  
+        var name = document.getElementById("pname").value
+        var bday = document.getElementById("bday").value
+        var type = document.getElementById("type").value
+        if(reason==='' || pressure ==='' || name ===''){
+          alert("Некоторые поля не заполнены. Проверьте.");
+        }
+        else if(doc === 'выберите врача/категория/кол-во'){
+          alert("Врач не выбран. Проверьте.");
+        }
+        else if(isNaN(Date.parse(bday))){
+          alert("Дата рождения не выбранна. Проверьте.");
+        }
+        else if(type === 'выберите тип пациента'){
+          alert("Тип пациента не выбран. Проверьте.");
+        }
+        else{
+          document.getElementById('form1').submit();
+        }    
+      }
   </script>
 {% endblock %}

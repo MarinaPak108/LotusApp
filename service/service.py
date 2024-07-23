@@ -144,7 +144,7 @@ class Service():
             ##doc spec
             ws.cell(row=6, column=7).value= doctor.spec
             ##nurse
-            ws.cell(row=7, column=7).value= "nurse"
+            ws.cell(row=7, column=7).value= doctor.nurse
             
             #fill patient related data:
             ## nomer talona
@@ -163,7 +163,9 @@ class Service():
             doc = os.path.join(folder,patient_id+'.'+doctor.name+'_('+p_name+').xlsx')
             wb.save(doc)
             ##print file
-            os.startfile(doc, "print")
+            #os.startfile(doc, "print")
+            ## open file
+            os.startfile(doc)
         except Exception as e:
             return "error in formFileSave:"+str(e) 
             
@@ -180,7 +182,8 @@ class Service():
             wsDoc = wb["settings"]
             docName = wsDoc[id][1].value
             docSpec = wsDoc[id][2].value
-            doc = Doctor(id=id, name=docName, spec=docSpec)
+            docNurse = wsDoc[id][3].value
+            doc = Doctor(id=id, name=docName, spec=docSpec, nurse= docNurse)
             return doc
         except Exception as e:
             return "error in getDocName:"+str(e) 

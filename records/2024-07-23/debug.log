@@ -1,0 +1,37 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65085
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-23
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:24:57] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-23)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:24:57] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:24:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:24:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-23 equals 0
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:24:59] "GET /day/2024-07-23 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65318
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:28:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:28:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-23 equals 0
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:28:21] "GET /day/2024-07-23 HTTP/1.1" 200 -
+ERROR:main:=============> Controller : in def def patients_post - 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:29:12] "POST /day/2024-07-23 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65381
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:30:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:30:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-23 equals 0
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:30:15] "GET /day/2024-07-23 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_Irina Vorontsova Klementjevna saved to excel
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:30:47] "[32mPOST /day/2024-07-23 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-23 equals 1
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:30:47] "GET /day/2024-07-23 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65449
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:31:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Jul/2024 19:31:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
