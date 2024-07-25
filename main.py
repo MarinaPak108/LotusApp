@@ -19,6 +19,7 @@ century = Service.countCentury()
 records_path = os.path.join(os.getcwd(), "records")
 folder_path =os.path.join(records_path, day)
 medical_file = os.path.join(os.getcwd(), "records/medical.xlsx")
+report_file= os.path.join(os.getcwd(), "records/report.xlsx")
 
 
 @app.route("/")
@@ -30,8 +31,7 @@ def home():
         if (day not in names):
             app.logger.info('%s def %s: day - %s', layer, request.endpoint,  day)
             yesterday_path = os.path.join(records_path, names[-1])
-            if(os.path.isdir
-               (yesterday_path)):
+            if(os.path.isdir(yesterday_path)):
                 yesterday_path = os.path.join(yesterday_path, "medical.xlsx")
                 wb.save(yesterday_path) 
             return redirect('/assign')
@@ -60,6 +60,19 @@ def my_form():
         new_data = [day, -1]
         Service.saveRecord(wb, "current", new_data, medical_file)
         app.logger.info('%s def %s: saved document with new data', layer,request.endpoint)
+        
+        #create header for doctors:
+        wb_report = Service.getWB(report_file)
+        ws_report = wb_report.create_sheet(day)
+        ws_rHeader = ["ID", "ФИО врача", "Специализация", "Ассистент", "М", "Ж", "Р", "Итого"]
+        ws_report.append(ws_rHeader)
+        
+        #get all doctors
+        ws_settings = wb["settings"]
+        for i in range(2,ws_settings.max_row+1):
+            args =[cell.value for cell in ws_settings[i]]
+            ws_report.append(args)
+        wb_report.save(report_file)
         return redirect("/")
     except Exception as e:
         return  redirectToErrorPage(str(e), "def "+request.endpoint)
@@ -164,6 +177,13 @@ def patients_post_error(id, errid, name):
     except Exception as e:
             redirectToErrorPage(str(e), "def "+request.endpoint)
 
+@app.route('/count/<id>')
+def count(id):
+    try:
+        Service.countDoctors(Service, day, id, medical_file, report_file)
+        return  render_template("summary.html")
+    except Exception as e:
+            redirectToErrorPage(str(e), "def "+request.endpoint)
 #################################################################################
 #to print error msg from service layer and then rais Exception
 def printErrorInLoggerThrowException(variableToCheck):

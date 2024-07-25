@@ -17,6 +17,7 @@
           <th style = "  border: 1px solid black;">Ж</th>
           <th style = "  border: 1px solid black;">М</th>
           <th style = "  border: 1px solid black;"></th>
+          <th style = "  border: 1px solid black;"></th>
         </tr>
       </thead>
       <tbody style="text-align: center;
@@ -31,6 +32,9 @@
             <td style = "  border: 1px solid black;"><form action="/day/{{record.date}}">
               <input type="submit" value="детали" />
           </form></td>
+          <td style = "  border: 1px solid black;"><form action="/count/{{record.date}}">
+            <input type="submit" value="итог" />
+        </form></td>
           </tr>
         {% endfor %}
       </tbody>

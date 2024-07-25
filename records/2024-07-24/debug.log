@@ -1,0 +1,28 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52803
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-24
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:42] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-24)
+ERROR:main:=============> Controller : in def def my_form - [Errno 13] Permission denied: 'D:\\LotusApp\\records/medical.xlsx'
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:42] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52844
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-24
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:57] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-24)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:58] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:28:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-24 equals 0
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:29:07] "GET /day/2024-07-24 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:29:11] "GET / HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-23 equals 2
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:29:34] "GET /day/2024-07-23 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:29:41] "GET / HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-24 equals 0
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:29:42] "GET /day/2024-07-24 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2024 15:33:41] "GET / HTTP/1.1" 200 -

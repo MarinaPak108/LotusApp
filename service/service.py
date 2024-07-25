@@ -162,10 +162,10 @@ class Service():
             ##form path to folder:
             doc = os.path.join(folder,patient_id+'.'+doctor.name+'_('+p_name+').xlsx')
             wb.save(doc)
-            ##print file
-            #os.startfile(doc, "print")
             ## open file
             os.startfile(doc)
+            ##print file
+            os.startfile(doc, "print")
         except Exception as e:
             return "error in formFileSave:"+str(e) 
             
@@ -195,10 +195,52 @@ class Service():
             doc.num = len(sorted_docs)
         return docs
         
-    
+    def printFile(folder,patient_id, doctor_name, p_name ):
+        doc = os.path.join(folder,patient_id+'.'+doctor_name+'_('+p_name+').xlsx')
+        ##print file
+        #os.startfile(doc, "print")
+        ## open file
+        os.startfile(doc)
             
     
-    
+    def countDoctors(self, today, day, folder, report_folder):
+        try:
+            if (day == today):
+                wb_report = self.getWB(report_folder)
+                ws_report = wb_report[day] #get all doctors names in report
+                
+                df=pd.read_excel(folder, sheet_name=day)
+                for i in range(2,ws_report.max_row+1):
+                    all_num = 0
+                    w_num = 0
+                    m_num = 0
+                    c_num = 0
+                    doc_id = ws_report.cell(i, 1).value
+                    #find all records with doctor id:
+                    doc_df = df[df['Врач_Индекс'] == doc_id]
+                    sz = len(doc_df)
+                    if(sz>0):
+                        all_num = sz
+                        mylist = doc_df['М\Ж\Р'].tolist() #get types list
+                        #count each type specifically
+                        w_num = mylist.count("Ж") 
+                        m_num = mylist.count("М")  
+                        c_num = mylist.count("Р") 
+                    #save to report file:
+                    #save all info           
+                    ws_report.cell(row=i, column=5).value = m_num
+                    ws_report.cell(row=i, column=6).value = w_num
+                    ws_report.cell(row=i, column=7).value = c_num
+                    ws_report.cell(row=i, column=8).value = all_num
+                wb_report.save(report_folder)  
+                
+                return
+        except Exception as e:
+            return "error in countDoctors:"+str(e) 
+            
+            
+            
+            
         
                 
          

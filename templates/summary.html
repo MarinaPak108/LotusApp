@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+{% block title %}PATIENTS - {{day}} {% endblock %}
+{% block style_local %}
+  {{ super() }} {# to load the parent assets #}
+  <style>
+    div {
+      padding:10px;
+    }    
+    table {
+      margin: auto;
+      padding:20px;
+      display: block;
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #fff;
+    }
+    
+    th, td {
+      padding: 0.25em 0.5em;
+      border: 1px solid black;
+    }
+  </style>
+{% endblock %}  
+{% block content %}
+    <div>
+        <h2>Summary</h2>
+    </div>
+{% endblock %}

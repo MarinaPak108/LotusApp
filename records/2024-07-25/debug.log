@@ -1,0 +1,300 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:49536
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-25
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:04:21] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:04:56] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:04:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:04:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52897
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-25
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:08:09] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+ERROR:main:=============> Controller : in def def my_form - 'tuple' object has no attribute 'value'
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:08:20] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:08:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54154
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:=============> Controller : in def def home - [Errno 13] Permission denied: 'd:\\LotusApp\\records/medical.xlsx'
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:11:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:11:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54407
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:12:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:12:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54655
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-25
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:12:40] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+ERROR:main:=============> Controller : in def def my_form - 'int' object has no attribute 'value'
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:12:45] "GET /assign HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:12:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61548
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-25
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:21:00] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:21:12] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:21:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:21:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62884
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-25
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:22:06] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:22:12] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:22:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:22:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:26:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:26:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:26:27] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52604
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:27:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:27:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:27:40] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53368
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/2024-07-25 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:28] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:29:29] "[32mGET /count/summary.html HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53686
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:30:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:30:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 12:30:13] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50814
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-07-25
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:14] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-07-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:15] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:16] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:18] "GET / HTTP/1.1" 200 -
+ERROR:main:Service msg: error in fromExcelToList:Doctor.__init__() takes from 1 to 6 positional arguments but 8 were given
+ERROR:main:=============> Controller : in def def patients - 
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:43:19] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50977
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:44:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:44:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-25 equals 0
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 17:44:38] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51660
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:01:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:01:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:01:20] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51713
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:01:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:01:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:02:01] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:02:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:02:38] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51883
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:04:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:04:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51946
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:05:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:05:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-25 equals 0
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:05:49] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_patient 5 saved to excel
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:06:08] "[32mPOST /day/2024-07-25 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-25 equals 1
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:06:08] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_patient test name1 saved to excel
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:06:35] "[32mPOST /day/2024-07-25 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-25 equals 2
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:06:35] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_Kiril Vodjanow Viktorovitch saved to excel
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:07:08] "[32mPOST /day/2024-07-25 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-25 equals 3
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:07:08] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:07:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:07:19] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52126
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:07:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:07:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55247
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:19:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:19:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def count - expected string or bytes-like object
+ERROR:main:Exception on /count/2024-07-25 [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'count' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:19:53] "[35m[1mGET /count/2024-07-25 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55435
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:20:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:20:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def count - expected string or bytes-like object
+ERROR:main:Exception on /count/2024-07-25 [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'count' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:20:56] "[35m[1mGET /count/2024-07-25 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55512
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:21:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:21:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def count - expected string or bytes-like object
+ERROR:main:Exception on /count/2024-07-25 [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'count' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:21:25] "[35m[1mGET /count/2024-07-25 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55791
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:23:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:23:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55886
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:24:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:24:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56319
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:37:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:37:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56347
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:37:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:37:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:37:23] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56455
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:43:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:43:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:43:18] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56560
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:45:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:45:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56610
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:46:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:46:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56863
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:48:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:48:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56926
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:21] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56948
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:37] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:38] "GET / HTTP/1.1" 200 -
