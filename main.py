@@ -180,8 +180,8 @@ def patients_post_error(id, errid, name):
 @app.route('/count/<id>')
 def count(id):
     try:
-        Service.countDoctors(Service, day, id, medical_file, report_file)
-        return  render_template("summary.html")
+        reports = Service.countDoctors(Service, day, id, medical_file, report_file)
+        return  render_template("summary.html", reports = reports, day = id)
     except Exception as e:
             redirectToErrorPage(str(e), "def "+request.endpoint)
 #################################################################################

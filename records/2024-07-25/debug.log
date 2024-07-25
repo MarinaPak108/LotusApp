@@ -298,3 +298,72 @@ INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:36] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:37] "GET /count/2024-07-25 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 18:49:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52084
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:18:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:18:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def count - 'record' is undefined
+ERROR:main:Exception on /count/2024-07-25 [GET]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'count' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:18:21] "[35m[1mGET /count/2024-07-25 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52119
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:18:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:18:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def count - 'record' is undefined
+ERROR:main:Exception on /count/2024-07-25 [GET]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'count' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:18:29] "[35m[1mGET /count/2024-07-25 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52172
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:19:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:19:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def count - 'record' is undefined
+ERROR:main:Exception on /count/2024-07-25 [GET]
+Traceback (most recent call last):
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "D:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'count' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:19:33] "[35m[1mGET /count/2024-07-25 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52271
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:24:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:24:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:24:30] "GET /count/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52465
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:27:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:27:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-07-25 equals 3
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:27:06] "GET /day/2024-07-25 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:27:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Jul/2024 20:27:15] "GET /count/2024-07-25 HTTP/1.1" 200 -

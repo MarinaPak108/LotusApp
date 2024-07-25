@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% block title %}PATIENTS - {{day}} {% endblock %}
+{% block title %}Report - {{day}} {% endblock %}
 {% block style_local %}
   {{ super() }} {# to load the parent assets #}
   <style>
@@ -22,7 +22,38 @@
   </style>
 {% endblock %}  
 {% block content %}
-    <div>
-        <h2>Summary</h2>
-    </div>
+  <div>
+    <h4>Отчет за {{day}} число</h4>
+  </div>
+  <div style="padding:30px;">
+    <table id="data" style="margin: auto;
+    padding:20px;
+    width: 600px;
+    border: 1px solid #fff;">
+      <thead style = " padding: 8px;
+      background-color: grey;
+      font-size: large;">
+        <tr style="padding: 3px;
+        border: 1px solid black;">
+          <th style = "  border: 1px solid black;">ФИО ВРАЧА</th>
+          <th style = "  border: 1px solid black;">М</th>
+          <th style = "  border: 1px solid black;">Ж</th>
+          <th style = "  border: 1px solid black;">Р</th>
+          <th style = "  border: 1px solid black;">ИТОГО</th>
+        </tr>
+      </thead>
+      <tbody style="text-align: center;
+      font-weight: normal; color:white">
+        {% for report in reports %}
+          <tr>
+            <td style = "  border: 1px solid black;">{{ report.name}}</td>
+            <td style = "  border: 1px solid black;">{{ report.men }}</td>
+            <td style = "  border: 1px solid black;">{{ report.woman }}</td>
+            <td style = "  border: 1px solid black;">{{ report.child }}</td>
+            <td style = "  border: 1px solid black;">{{ report.total }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 {% endblock %}

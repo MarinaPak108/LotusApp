@@ -10,7 +10,8 @@ from model.record import Record
 
 
 from model.doctor import Doctor
-from model.patient import Patient 
+from model.patient import Patient
+from model.report import Report 
 
 class Service():
     T = TypeVar('T')   
@@ -205,10 +206,9 @@ class Service():
     
     def countDoctors(self, today, day, folder, report_folder):
         try:
+            wb_report = self.getWB(report_folder)
+            ws_report = wb_report[day] #get all doctors names in report
             if (day == today):
-                wb_report = self.getWB(report_folder)
-                ws_report = wb_report[day] #get all doctors names in report
-                
                 df=pd.read_excel(folder, sheet_name=day)
                 for i in range(2,ws_report.max_row+1):
                     all_num = 0
@@ -233,8 +233,8 @@ class Service():
                     ws_report.cell(row=i, column=7).value = c_num
                     ws_report.cell(row=i, column=8).value = all_num
                 wb_report.save(report_folder)  
-                
-                return
+            reports = self.fromExcelToList(Report, ws_report)
+            return reports
         except Exception as e:
             return "error in countDoctors:"+str(e) 
             
