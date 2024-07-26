@@ -164,7 +164,7 @@ class Service():
             doc = os.path.join(folder,patient_id+'.'+doctor.name+'_('+p_name+').xlsx')
             wb.save(doc)
             ## open file
-            os.startfile(doc)
+            #os.startfile(doc)
             ##print file
             os.startfile(doc, "print")
         except Exception as e:
