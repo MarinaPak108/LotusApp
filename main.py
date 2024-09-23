@@ -7,6 +7,8 @@ from model.doctor import Doctor
 from model.patient import Patient 
 from service.service import Service
 
+from error.error import Error_msg
+
 app = Flask(__name__)
 layer = "=============> Controller"
 day = Service.getDay()
@@ -44,7 +46,13 @@ def home():
             return render_template('start.html', title="Список отчетов", tab = header, records = records)
         #raise Exception("error in getWB:")
     except Exception as e:
-            return redirectToErrorPage(str(e), "def "+request.endpoint)
+            err = Service.fromErroToEnum(e.errno)
+            err_msg = Service.fromErrorMsgToEnum(e.strerror)
+            if(err in Error_msg.__members__ or err_msg in Error_msg.__members__):
+                msg = Error_msg[err].value
+                return redirectToErrorPage(str(e), "def "+request.endpoint, msg)
+            else:
+                return redirectToErrorPage(str(e), "def "+request.endpoint)
        
 @app.route('/assign')
 def my_form():
@@ -191,9 +199,9 @@ def printErrorInLoggerThrowException(variableToCheck):
                 app.logger.error('Service msg: %s', variableToCheck)
                 raise Exception
 #to save to logger msg and redirect to error.html page
-def redirectToErrorPage(msg, name):
+def redirectToErrorPage(msg, name, user_msg=''):
     app.logger.error('%s : in def %s - %s', layer,name, msg)
-    return render_template('error.html')
+    return render_template('error.html', msg = user_msg)
 ################################################################################### 
 if __name__ == "__main__":
     

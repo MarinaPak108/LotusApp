@@ -6,12 +6,11 @@ import pandas as pd
 from dateutil.relativedelta import relativedelta
 
 from model.record import Record
-
-
-
 from model.doctor import Doctor
-from model.patient import Patient
 from model.report import Report 
+
+from error.error import Error_msg
+
 
 class Service():
     T = TypeVar('T')   
@@ -190,11 +189,14 @@ class Service():
             return "error in getDocName:"+str(e) 
 
     def sortDoctors (docs, patient):
-        for doc in docs:
-            id = doc.id
-            sorted_docs=[p for p in patient if p.docId == id]
-            doc.num = len(sorted_docs)
-        return docs
+        try:
+            for doc in docs:
+                id = doc.id
+                sorted_docs=[p for p in patient if p.docId == id]
+                doc.num = len(sorted_docs)
+            return docs
+        except Exception as e:
+            return "error in sortDoctors:"+str(e) 
         
     def printFile(folder,patient_id, doctor_name, p_name ):
         doc = os.path.join(folder,patient_id+'.'+doctor_name+'_('+p_name+').xlsx')
@@ -238,7 +240,11 @@ class Service():
         except Exception as e:
             return "error in countDoctors:"+str(e) 
             
-            
+    def fromErroToEnum(err_no):
+        return 'e_'+str(err_no)
+    
+    def fromErrorMsgToEnum(err_msg):
+        return err_msg.replace(" ", "_")    
             
             
         
