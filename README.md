@@ -1,12 +1,12 @@
-# flask_desktop_app
+# Lotus Project (Desktop Version)
+The Lotus Desktop Electronic Health Record (EHR) System is designed to assist healthcare professionals, including assistants and doctors, in streamlining and automating key tasks related to patient care and hospital administration.
 
-## reads randomly phrase of the day by category
+## Current Features (v1):
 
-works with local names.xlsx file in "phrases" folder to show categories and get phrase of the day randomly but according to chosen category
+- Patient Data Management: Securely save, update, and retrieve patient information, ensuring data accuracy and ease of access during treatment.
+- Automation: Automated printing of tickets and prescriptions to reduce manual workload and improve efficiency.
+  
+## Upcoming Features (v2):
 
-also works with folders "a" ... "i" to show random image according to category
+- Appointment Scheduling: Assistants will be able to book appointments for patients and manage doctor availability efficiently, ensuring optimal scheduling and resource management.
 
-Flask==3.0.0<br>
-flaskwebgui==1.0.8<br>
-openpyxl==3.1.2<br>
-Jinja2==3.1.2<br>
