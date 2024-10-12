@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %} Doctors {% endblock %}
+{% block style_local %}
+  {{ super() }} {# to load the parent assets #}
+  <style>
+    div {
+      padding:10px;
+    }    
+    table {
+      margin: auto;
+      padding:20px;
+      display: block;
+      border: 1px solid #fff;
+    }
+    
+    th, td {
+      padding: 0.25em 0.5em;
+      border: 1px solid black;
+    }
+  </style>
+{% endblock %}
+{% block content %}
+<div>
+    <table id = 'docs'>
+        <thead>
+            <tr>
+                <th> ФИО Врача </th>
+                <th> Специализация </th>
+                <th> Ассистент </th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody style="text-align: center; font-weight: normal; color:white">
+            {% for doc in doctors %}
+                <tr>
+                    <td>{{doc.name}}</td>
+                    <td>{{doc.spec}}</td>
+                    <td>{{doc.nurse}}</td>
+                    <td> </td>
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+    </div>
+{%endblock%}

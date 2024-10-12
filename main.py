@@ -84,7 +84,6 @@ def my_form():
         return redirect("/")
     except Exception as e:
         return  redirectToErrorPage(str(e), "def "+request.endpoint)
-    
         
 @app.route('/day/<id>', defaults={'errid': 0, 'name': None})
 @app.route('/day/<id>/<errid>/<name>')
@@ -192,6 +191,21 @@ def count(id):
         return  render_template("summary.html", reports = reports, day = id)
     except Exception as e:
             redirectToErrorPage(str(e), "def "+request.endpoint)
+
+#################################################################################
+#settings for doctors list:
+@app.route("/doctors")
+def doctors_list():
+    try:
+        wb=Service.getWB(medical_file)
+        printErrorInLoggerThrowException(wb)
+        ws = wb["settings"]
+        docs = Service.fromExcelToList(Doctor, ws)
+        return render_template("doctors.html", doctors=docs)
+    except Exception as e:
+        return redirectToErrorPage(str(e), "def "+request.endpoint)   
+    
+    
 #################################################################################
 #to print error msg from service layer and then rais Exception
 def printErrorInLoggerThrowException(variableToCheck):
