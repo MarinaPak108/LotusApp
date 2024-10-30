@@ -224,7 +224,8 @@ def doctors_list_post():
         dname = request.form['dname'] 
         spec = request.form['spec'] 
         nurse = request.form['nurse'] 
-        Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse)
+        isActive = request.form['active'] 
+        Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse, isActive)
         return redirect('/doctors')        
     except Exception as e:
         err = Service.fromErroToEnum(e.errno)

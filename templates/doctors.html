@@ -31,6 +31,7 @@
                 <th> ФИО Врача </th>
                 <th> Специализация </th>
                 <th> Ассистент </th>
+                <th> Статус </th>
                 <th> </th>
             </tr>
         </thead>
@@ -40,7 +41,8 @@
                     <td>{{doc.name}}</td>
                     <td>{{doc.spec}}</td>
                     <td>{{doc.nurse}}</td>
-                    <td> <button onclick = "showInput('true', {{doc.id}}, '{{doc.name}}', '{{doc.spec}}', '{{doc.nurse}}')">Обновить данные</button></td>
+                    <td>{{doc.active}}</td>
+                    <td> <button onclick = "showInput('true', {{doc.id}}, '{{doc.name}}', '{{doc.spec}}', '{{doc.nurse}}', '{{doc.active}}')">Обновить данные</button></td>
                 </tr>
             {%endfor%}
         </tbody>
@@ -55,6 +57,7 @@
       <input type="hidden" name="id" id = "id">
       <input name = "dname" id = "dname" placeholder = "ФИО Врача" required>
       <input name = "spec" id = "spec" placeholder = "Специализация" required>
+      <input name = "active" id = "active" placeholder = "Статус" required>
       <input type = "text" name = "nurse" id = "nurse" placeholder = "Ассистент" value= "n/a" required>
     </div>  
     <div>
@@ -69,7 +72,7 @@
   <script>
     var divInput = document.getElementById("input-div");
     var isMod = null;
-    function showInput(isModify, id, name, spec, assistant){
+    function showInput(isModify, id, name, spec, assistant, active){
       if(isMod == null){
         isMod = isModify;
       } else if(isMod != isModify){
@@ -82,6 +85,7 @@
         document.getElementById('dname').value = name; 
         document.getElementById('spec').value = spec; 
         document.getElementById('nurse').value = assistant;
+        document.getElementById('active').value = active;
       }
      
     }

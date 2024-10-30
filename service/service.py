@@ -195,6 +195,9 @@ class Service():
     def sortDoctors (docs, patient):
         doc_list = []
         try:
+            d = type(docs)
+            #get only active doctors by active status
+            docs = [d for d in docs if d.active == 1]
             for doc in docs:
                 id = doc.id
                 sorted_docs=[p for p in patient if p.docId == id]
@@ -246,7 +249,7 @@ class Service():
         except Exception as e:
             return "error in countDoctors:"+str(e) 
             
-    def saveDoctor (self,med_file, report_file, id, name, spec, nurse):
+    def saveDoctor (self,med_file, report_file, id, name, spec, nurse, isActive):
         day = self.getDay()
         wb = self.getWB(med_file)    
         wsDoc = wb["settings"]
@@ -264,6 +267,7 @@ class Service():
             wsDoc[id][1].value = name
             wsDoc[id][2].value = spec
             wsDoc[id][3].value = nurse
+            wsDoc[id][4].value = isActive
             wb.save(med_file)
             
             wsrDoc[id][0].value = id
@@ -300,8 +304,7 @@ class Service():
             else:
                 df=pd.read_excel(folder, sheet_name=day, skiprows = range(1, latest_record+1))                
                 latest_record = latest_record + len(df.axes[0])
-
-            
+                
             filtered_patients_list_df = df[df['Врач_Индекс'] == int(docId)].reset_index(drop=True)
             #if latest list was already printed out:
             if df.empty:
