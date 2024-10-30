@@ -89,8 +89,11 @@ def my_form():
 @app.route('/day/<id>/<errid>/<name>')
 def patients(id, errid, name):
     try:
+        msg = ""
         wb = Service.getWB(medical_file)
-        error = ""
+        msg = request.args.get('msg')
+        if(msg == None):
+            msg = ""
         printErrorInLoggerThrowException(wb)
         isActiveDay = False
                         
@@ -98,7 +101,7 @@ def patients(id, errid, name):
             isActiveDay = True
         if(errid=="1"):
             app.logger.info('%s def %s : patient %s already exists', layer, request.endpoint , name)
-            error = "ФИО "+name+" уже существует. Пожалуйста проверьте еще раз данные."
+            msg = "ФИО "+name+" уже существует. Пожалуйста проверьте еще раз данные."
         if(id in wb.sheetnames):
             
             wsd = wb['settings']
@@ -109,7 +112,7 @@ def patients(id, errid, name):
             patients= Service.fromExcelToList(Patient, ws)
             printErrorInLoggerThrowException(patients)
             
-            doctors = Service.sortDoctors(docs, patients)
+            doctors, filtered = Service.sortDoctors(docs, patients)
             
             app.logger.info('%s def %s : number of patients in %s equals %s', layer, request.endpoint, id, len(patients))
             return render_template('patient.html', 
@@ -120,7 +123,8 @@ def patients(id, errid, name):
                                     length = len(patients), 
                                     grown = grownUp,
                                     century = century,
-                                    error = error)
+                                    fDoc = filtered,
+                                    error = msg)
         else:
             return redirect("/")
     except Exception as e:
@@ -134,7 +138,7 @@ def patients_post(id):
         patient_type = request.form['type']
         patient_birthdate = request.form['birthdate']
         patient_reason = request.form['reason']
-        patient_pressure = request.form['pressure']
+        patient_pressure = "n/a"
         patient_docId = request.form['doc']
         patient_doc = Service.getDocName(Service, patient_docId, medical_file)
         url = Service.checkSavePatientGetPage(Service,
@@ -163,7 +167,7 @@ def patients_post_error(id, errid, name):
         patient_type = request.form['type']
         patient_birthdate = request.form['birthdate']
         patient_reason = request.form['reason']
-        patient_pressure = request.form['pressure']
+        patient_pressure = "n/a"
         patient_docId = request.form['doc']
         patient_doc = Service.getDocName(Service, patient_docId, medical_file)
         url = Service.checkSavePatientGetPage(Service,
@@ -192,6 +196,14 @@ def count(id):
     except Exception as e:
             redirectToErrorPage(str(e), "def "+request.endpoint)
 
+@app.route('/docListPrint/<docId>', methods = ['GET'])
+def doctor_list_print_patients (docId):
+    try:
+        msg = Service.getDoctorList(Service, medical_file, folder_path, day, docId)
+        return redirect("/day/%s?msg=%s"%(day,msg))
+    except Exception as e:
+            redirectToErrorPage(str(e), "def "+request.endpoint)
+    
 #################################################################################
 #settings for doctors list:
 @app.route("/doctors")
@@ -201,11 +213,29 @@ def doctors_list():
         printErrorInLoggerThrowException(wb)
         ws = wb["settings"]
         docs = Service.fromExcelToList(Doctor, ws)
-        return render_template("doctors.html", doctors=docs)
+        return render_template("doctors.html", doctors=docs, isActive = False)
     except Exception as e:
         return redirectToErrorPage(str(e), "def "+request.endpoint)   
-    
-    
+
+@app.route('/doctors', methods =["POST"])    
+def doctors_list_post():
+    try:
+        doc_id = request.form['id']  
+        dname = request.form['dname'] 
+        spec = request.form['spec'] 
+        nurse = request.form['nurse'] 
+        Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse)
+        return redirect('/doctors')        
+    except Exception as e:
+        err = Service.fromErroToEnum(e.errno)
+        err_msg = Service.fromErrorMsgToEnum(e.strerror)
+        if(err in Error_msg.__members__ or err_msg in Error_msg.__members__):
+            msg = Error_msg[err].value
+            return redirectToErrorPage(str(e), "def "+request.endpoint, msg)
+        else:
+            return redirectToErrorPage(str(e), "def "+request.endpoint)
+   
+            
 #################################################################################
 #to print error msg from service layer and then rais Exception
 def printErrorInLoggerThrowException(variableToCheck):
@@ -225,5 +255,5 @@ if __name__ == "__main__":
     #save logs file to today folder
     logfile = os.path.join(folder_path, 'debug.log')
     logging.basicConfig(filename=logfile,level=logging.DEBUG)
-    FlaskUI(app=app, server="flask",  width= 800, height=600).run()
+    FlaskUI(app=app, server="flask").run()
   

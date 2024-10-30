@@ -3,11 +3,15 @@ import openpyxl
 from datetime import date, datetime
 from typing import TypeVar
 import pandas as pd
+import fnmatch
+import re
 from dateutil.relativedelta import relativedelta
 
+from model.patient import Patient
 from model.record import Record
 from model.doctor import Doctor
 from model.report import Report 
+from exception.custom_exception import CustomException
 
 from error.error import Error_msg
 
@@ -46,7 +50,6 @@ class Service():
         except Exception as e:
             return "error in fromExcelToModel:"+str(e)
             
-    
     def saveRecord(wb,name, new_data, file_path):
         ws=wb[name]
         ws.append(new_data)
@@ -172,6 +175,7 @@ class Service():
     def countGrownUp():
         yrs = date.today()  - relativedelta(years=18)  
         return str(yrs)  
+    
     def countCentury():
         yrs = date.today()  - relativedelta(years=100)  
         return str(yrs)          
@@ -189,12 +193,15 @@ class Service():
             return "error in getDocName:"+str(e) 
 
     def sortDoctors (docs, patient):
+        doc_list = []
         try:
             for doc in docs:
                 id = doc.id
                 sorted_docs=[p for p in patient if p.docId == id]
                 doc.num = len(sorted_docs)
-            return docs
+                if(doc.num > 0):
+                    doc_list.append(doc)
+            return docs, doc_list
         except Exception as e:
             return "error in sortDoctors:"+str(e) 
         
@@ -205,7 +212,6 @@ class Service():
         ## open file
         os.startfile(doc)
             
-    
     def countDoctors(self, today, day, folder, report_folder):
         try:
             wb_report = self.getWB(report_folder)
@@ -240,17 +246,117 @@ class Service():
         except Exception as e:
             return "error in countDoctors:"+str(e) 
             
+    def saveDoctor (self,med_file, report_file, id, name, spec, nurse):
+        day = self.getDay()
+        wb = self.getWB(med_file)    
+        wsDoc = wb["settings"]
+        wbr = self.getWB(report_file)
+        wsrDoc = wbr[day]
+        name = name.replace(" ", "_")
+        #check if records in medical file settings and records file current day are the same:
+        if (wsDoc.max_row != wsrDoc.max_row):
+            raise CustomException(f"Проверьте записи в файле medical.xls[settings] и файле records.xls[{day}] на соответствие.")
+        #check if we need to save new record => get new id
+        if(id == ''):
+            id = wsDoc.max_row+1
+        try:
+            wsDoc[id][0].value = id
+            wsDoc[id][1].value = name
+            wsDoc[id][2].value = spec
+            wsDoc[id][3].value = nurse
+            wb.save(med_file)
+            
+            wsrDoc[id][0].value = id
+            wsrDoc[id][1].value = name
+            wsrDoc[id][2].value = spec
+            wsrDoc[id][3].value = nurse
+            wbr.save(report_file)
+        except Exception as e:
+             return "error in saveDoctor:"+str(e)
+          
     def fromErroToEnum(err_no):
         return 'e_'+str(err_no)
     
     def fromErrorMsgToEnum(err_msg):
         return err_msg.replace(" ", "_")    
             
+    def getDoctorList (self, folder, today_folder,  day, docId):
+        try: 
+            #get doc name
+            name = self.getDocName(Service, docId, folder).name
+            
+            latest_record = 0
+            #code to check if already exists, also if exists from what next patient to start
+            for file in os.listdir(today_folder):
+                if fnmatch.fnmatch(file, "0_%s_*"%(docId)):
+                    str_num = re.search("{(.*)}", file)
+                    latest_record = int(str_num.group(1))
+    
+            #in case no records there
+            if latest_record == 0:
+                df=pd.read_excel(folder, sheet_name=day) 
+                latest_record = len(df.axes[0])
+            #in case list was already created. adding +1 to start from next record              
+            else:
+                df=pd.read_excel(folder, sheet_name=day, skiprows = range(1, latest_record+1))                
+                latest_record = latest_record + len(df.axes[0])
+
+            
+            filtered_patients_list_df = df[df['Врач_Индекс'] == int(docId)].reset_index(drop=True)
+            #if latest list was already printed out:
+            if df.empty:
+                return ("Нет новых данных по врачу c номером id_name: %s_%s" % (docId, name))
+            
+            msg = self.fillFormPrintPatients(self, 
+                                       today_folder, 
+                                       docId, 
+                                       filtered_patients_list_df,
+                                       latest_record,
+                                       name)
+            return msg                      
+        except Exception as e:
+            return "error in getDoctorList:"+str(e)
+    
+    def fillFormPrintPatients(self,
+                              folder, 
+                              docId, 
+                              df_list,
+                              last_record,
+                              name):
+        try:
+            template = "records/list.xlsx"
+            wb= self.getWB(template)
+            ws = wb['list']
+            
+            ##fill doc related data
+            ws.cell(row=1, column=2).value=docId
+            ws.cell(row=1, column=4).value = name
+            
+            ##fill patients related data:
+            for index, row in df_list.iterrows():
+                index+=3
+                #get data from each row
+                patient_id = row['ID']
+                patient_name = row['ФИО пациента']
+                patient_gender = row['М\Ж\Р']
+                patient_bday = row['Дата рождения']
+                
+                #fill created document:
+                ws.cell(row = index, column = 1).value=patient_id
+                ws.cell(row = index, column = 2).value=patient_name
+                ws.cell(row = index, column = 3).value=patient_gender
+                ws.cell(row = index, column = 4).value=patient_bday
+                
+            #save file  
+            path = os.path.join(folder,"0_%s_%s_{%s}.xlsx"%(docId,name, last_record))  
+            wb.save(path)           
+            os.startfile(path, "print") 
+            return ("Файл с обновленным списком создан: %s" % path)
+        except Exception as e:
+            return "error in fillFormPrintPatients:"+str(e)    
+                    
+            
             
         
-                
-         
-        
-    
 
 

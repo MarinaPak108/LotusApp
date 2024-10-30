@@ -7,10 +7,14 @@
       padding:10px;
     }    
     table {
+      width: 90vw;
       margin: auto;
       padding:20px;
       display: block;
-      border: 1px solid #fff;
+      height: 300px;
+      overflow-y: scroll;
+      border: 2px solid #ddd;
+      border-radius: 8px;
     }
     
     th, td {
@@ -36,10 +40,50 @@
                     <td>{{doc.name}}</td>
                     <td>{{doc.spec}}</td>
                     <td>{{doc.nurse}}</td>
-                    <td> </td>
+                    <td> <button onclick = "showInput('true', {{doc.id}}, '{{doc.name}}', '{{doc.spec}}', '{{doc.nurse}}')">Обновить данные</button></td>
                 </tr>
             {%endfor%}
-            </tbody>
-        </table>
+        </tbody>
+    </table>
+</div> 
+<div>
+  <button onclick = "showInput('false', '', '', '')">Добавить врача</button>
+</div>
+<div id="input-div" style = "display:none;">
+  <form method = "POST" id="form">
+    <div>
+      <input type="hidden" name="id" id = "id">
+      <input name = "dname" id = "dname" placeholder = "ФИО Врача" required>
+      <input name = "spec" id = "spec" placeholder = "Специализация" required>
+      <input type = "text" name = "nurse" id = "nurse" placeholder = "Ассистент" value= "n/a" required>
+    </div>  
+    <div>
+      <input type="submit" value="Сохранить">
     </div>
+  </form>
+</div>
+{%endblock%}
+
+{%block javascripts_local%}
+  {{super()}}
+  <script>
+    var divInput = document.getElementById("input-div");
+    var isMod = null;
+    function showInput(isModify, id, name, spec, assistant){
+      if(isMod == null){
+        isMod = isModify;
+      } else if(isMod != isModify){
+        isMod = isModify;
+        divInput.style.display = "none";
+      }
+      divInput.style.display = divInput.offsetParent === null ? 'block' : 'none'; 
+      if(isModify){
+        document.getElementById('id').value = id; 
+        document.getElementById('dname').value = name; 
+        document.getElementById('spec').value = spec; 
+        document.getElementById('nurse').value = assistant;
+      }
+     
+    }
+  </script>  
 {%endblock%}

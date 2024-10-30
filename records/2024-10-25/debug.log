@@ -1,0 +1,387 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55995
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-10-25
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:08:46] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-10-25)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:08:46] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:08:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:08:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:08:52] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:10:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:10:57] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56598
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:11:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:11:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:11:13] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58556
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:28:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:28:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:28:03] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58840
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:30:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:30:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:30:13] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:59671
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:36:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:36:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:36:02] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60025
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:37:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:37:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:37:20] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60254
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:38:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:38:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:38:38] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60430
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:40:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:40:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:40:39] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60545
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:42:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:42:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:42:58] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60708
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:45:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:45:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def doctors_list - 'doc' is undefined
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:45:02] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60816
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:46:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:46:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def doctors_list - 'doc' is undefined
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:46:20] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60891
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:47:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:47:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def doctors_list - 'doc' is undefined
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:47:07] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60954
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:47:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:47:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:47:42] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61149
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:50:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:50:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:=============> Controller : in def def doctors_list - 'doc' is undefined
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:50:03] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61204
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:50:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:50:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:50:34] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61627
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:55:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:55:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 10:55:37] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56744
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:10:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:10:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:10:28] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56898
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:11:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:11:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:11:54] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56991
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:12:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:12:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:12:50] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57085
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:13:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:13:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:14:01] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57164
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:14:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:14:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:14:37] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57387
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:17:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:17:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:17:38] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57536
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:20:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:20:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:20:12] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57671
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:21:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:21:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:21:47] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57715
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:22:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:22:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:22:15] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57796
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:23:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:23:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 11:23:13] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53600
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:37:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:37:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:37:58] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54787
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:41:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:41:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:41:25] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55190
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:42:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:42:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:42:35] "GET /doctors HTTP/1.1" 200 -
+ERROR:main:Exception on /doctors [POST]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 215, in doctors_list_post
+    Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse)
+  File "d:\LotusApp\service\service.py", line 249, in saveDoctor
+    wsrDoc = wbr[day]
+  File "d:\LotusApp\.venv\lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet <function Service.getDay at 0x000001DB403105E0> does not exist.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 217, in doctors_list_post
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'KeyError' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:42:50] "[35m[1mPOST /doctors HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55281
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:43:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:43:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:43:29] "GET /doctors HTTP/1.1" 200 -
+ERROR:main:Exception on /doctors [POST]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 215, in doctors_list_post
+    Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse)
+  File "d:\LotusApp\service\service.py", line 249, in saveDoctor
+    wsrDoc = wbr[day]
+  File "d:\LotusApp\.venv\lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet <function Service.getDay at 0x000001BE52CA8700> does not exist.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 217, in doctors_list_post
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'KeyError' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:43:57] "[35m[1mPOST /doctors HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55964
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:44:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:44:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:44:57] "GET /doctors HTTP/1.1" 200 -
+ERROR:main:Exception on /doctors [POST]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 215, in doctors_list_post
+    Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse)
+  File "d:\LotusApp\service\service.py", line 249, in saveDoctor
+    wsrDoc = wbr[day]
+  File "d:\LotusApp\.venv\lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet <function Service.getDay at 0x0000019023C48700> does not exist.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 217, in doctors_list_post
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'KeyError' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:46:39] "[35m[1mPOST /doctors HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /doctors [POST]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 215, in doctors_list_post
+    Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse)
+  File "d:\LotusApp\service\service.py", line 249, in saveDoctor
+    wsrDoc = wbr[day]
+  File "d:\LotusApp\.venv\lib\site-packages\openpyxl\workbook\workbook.py", line 287, in __getitem__
+    raise KeyError("Worksheet {0} does not exist.".format(key))
+KeyError: 'Worksheet <function Service.getDay at 0x0000019023C48700> does not exist.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 217, in doctors_list_post
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'KeyError' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:46:54] "[35m[1mPOST /doctors HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56250
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:47:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:47:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:47:11] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56454
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:48:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:48:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:48:06] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56968
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:49:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:49:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:49:55] "GET /doctors HTTP/1.1" 200 -
+ERROR:main:Exception on /doctors [POST]
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'doctors_list_post' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:50:25] "[35m[1mPOST /doctors HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57544
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:52:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:52:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:52:37] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58281
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:55:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:55:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:55:22] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:56:07] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:56:07] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58680
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:57:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:57:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:57:10] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:59567
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:59:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:59:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:59:25] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:59:45] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 21:59:45] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60136
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:01:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:01:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:01:50] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61022
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:05:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:05:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:05:40] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:08:06] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:08:06] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:08:28] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:08:28] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61684
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:18] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:30] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:30] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:46] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:09:46] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62174
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:11:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:11:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2024 22:11:35] "GET /doctors HTTP/1.1" 200 -

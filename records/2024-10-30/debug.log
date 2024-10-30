@@ -1,0 +1,135 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:59079
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-10-30
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 09:57:11] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-10-30)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 09:57:11] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 09:57:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 09:57:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 0
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 09:57:13] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63593
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:04:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:04:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 0
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:04:39] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_test1 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:04:53] "[32mPOST /day/2024-10-30 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 1
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:04:54] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_test2 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:05:14] "[32mPOST /day/2024-10-30 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:05:14] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:05:19] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:05:19] "GET /day/2024-10-30?msg=None HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51757
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:10:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:10:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:11:01] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:11:04] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:11:04] "GET /day/2024-10-30?msg=None HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56997
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:19:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:19:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:19:42] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:19:44] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:19:44] "GET /day/2024-10-30?msg=None HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:57283
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:20:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:20:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:20:09] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:20:10] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:20:10] "GET /day/2024-10-30?msg=error%20in%20getDoctorList:local%20variable%20'latest_record'%20referenced%20before%20assignment HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58485
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:22:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:22:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:25:41] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:25:43] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 2
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:25:43] "GET /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_2_Сирил_Маха_Мадакалапуваге_Де_Силва_{2}.xlsx HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 3_test3 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:26:06] "[32mPOST /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_2_Сирил_Маха_Мадакалапуваге_Де_Силва_{2}.xlsx HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 3
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:26:06] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:26:21] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 3
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:26:21] "GET /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_2_Сирил_Маха_Мадакалапуваге_Де_Силва_{3}.xlsx HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:26:37] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 3
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:26:37] "GET /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id:%202 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62828
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 3
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:18] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:20] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 3
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:20] "GET /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id_name:%202_Сирил_Маха_Мадакалапуваге_Де_Силва HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_test4 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:38] "[32mPOST /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id_name:%202_Сирил_Маха_Мадакалапуваге_Де_Силва HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 4
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:38] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:45] "[32mGET /docListPrint/4 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 4
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:29:45] "GET /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_4_Надиша_Гаятри_Суриаратчи_{4}.xlsx HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_test5 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:30:08] "[32mPOST /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_4_Надиша_Гаятри_Суриаратчи_{4}.xlsx HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:30:08] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:30:14] "[32mGET /docListPrint/4 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:30:14] "GET /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_4_Надиша_Гаятри_Суриаратчи_{5}.xlsx HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:30:21] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:30:21] "GET /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_2_Сирил_Маха_Мадакалапуваге_Де_Силва_{5}.xlsx HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:49241
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:17] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:21] "[32mGET /docListPrint/4 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:21] "GET /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id_name:%204_Надиша_Гаятри_Суриаратчи HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:25] "[32mGET /docListPrint/2 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:25] "GET /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id_name:%202_Сирил_Маха_Мадакалапуваге_Де_Силва HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_test1 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:45] "[32mPOST /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id_name:%202_Сирил_Маха_Мадакалапуваге_Де_Силва HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : patient test1 already exists
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 5
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:33:46] "GET /day/2024-10-30/1/test1 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post_error : patient 1_test6 saved to excel
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:34:03] "[32mPOST /day/2024-10-30/1/test1 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 6
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:34:03] "GET /day/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:34:12] "[32mGET /docListPrint/4 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 6
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:34:13] "GET /day/2024-10-30?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-30\\0_4_Надиша_Гаятри_Суриаратчи_{6}.xlsx HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:34:24] "[32mGET /docListPrint/4 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-30 equals 6
+INFO:werkzeug:127.0.0.1 - - [30/Oct/2024 10:34:24] "GET /day/2024-10-30?msg=Нет%20новых%20данных%20по%20врачу%20c%20номером%20id_name:%204_Надиша_Гаятри_Суриаратчи HTTP/1.1" 200 -

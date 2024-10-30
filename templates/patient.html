@@ -7,17 +7,28 @@
       padding:10px;
     }    
     table {
-      margin: auto;
+      width: 90vw;
+      margin: 10px auto;
       padding:20px;
       display: block;
       height: 300px;
       overflow-y: scroll;
-      border: 1px solid #fff;
+      border: 2px solid #ddd;
+      border-radius: 8px;
     }
     
     th, td {
       padding: 0.25em 0.5em;
       border: 1px solid black;
+    }
+
+    .bordered-container {
+      width: 90vw;
+      margin: 10px auto;
+      padding: 20px;
+      border: 2px solid #ddd; /* Only border */
+      border-radius: 8px;
+      box-sizing: border-box; /* Ensures padding does not increase the div's width */
     }
   </style>
 {% endblock %}  
@@ -39,7 +50,6 @@
           <th>М\Ж\Р</th>
           <th>Дата рождения</th>
           <th>Причина</th>
-          <th>Давление</th>
         </tr>
       </thead>
       <tbody style="text-align: center;
@@ -53,7 +63,6 @@
             <td>{{patient.type }}</td>
             <td>{{patient.birthdate }}</td>
             <td>{{patient.reason }}</td>
-            <td>{{patient.pressure }}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -63,7 +72,16 @@
   {% if error!= "" %}
   <h8 style = "color:red">{{error}}</h8>
   {% endif%}
-  <div>
+  <div class = "bordered-container">
+    <select id="doctorPatientList">
+        {% for doctor in fDoc %}
+        <option value = {{doctor.id}}> {{doctor.name}}</option>
+        {% endfor %}
+    </select>
+    <button class="button" type="button"  onclick="printPatients()">Распечатать список пациентов</button>
+  </div>
+    
+  <div class = "bordered-container">
     <form method="POST" id="form1">
       <div>
         <input type="hidden" list="userA" id = "docid"/>
@@ -75,7 +93,6 @@
             {% endfor %}
         </select>
         <input name="reason" id = "reason" placeholder="Тема беседы">
-        <input name="pressure" id = "pressure" placeholder="Давление">
     </div>
     <div>
       <p id="demo"></p>
@@ -153,11 +170,10 @@
       function checkIfEmpty(){
         var doc = document.getElementById("userA").value
         var reason = document.getElementById("reason").value 
-        var pressure = document.getElementById("pressure").value  
         var name = document.getElementById("pname").value
         var bday = document.getElementById("bday").value
         var type = document.getElementById("type").value
-        if(reason==='' || pressure ==='' || name ===''){
+        if(reason==='' || name ===''){
           alert("Некоторые поля не заполнены. Проверьте.");
         }
         else if(doc === 'выберите врача/категория/кол-во'){
@@ -172,6 +188,12 @@
         else{
           document.getElementById('form1').submit();
         }    
+      }
+
+      function printPatients(){
+        var patientList = document.getElementById("doctorPatientList");
+        var docId = patientList.value;
+        window.location.href = "/docListPrint/"+docId
       }
   </script>
 {% endblock %}
