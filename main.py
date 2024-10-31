@@ -230,9 +230,11 @@ def doctors_list_post():
         Service.saveDoctor(Service, medical_file, report_file, doc_id, dname, spec, nurse, isActive)
         return redirect('/doctors')        
     except Exception as e:
-        err = Service.fromErroToEnum(e.errno)
-        err_msg = Service.fromErrorMsgToEnum(e.strerror)
-        if(err in Error_msg.__members__ or err_msg in Error_msg.__members__):
+        if len(e.args)==1:
+            err = Service.fromErrorMsgToEnum(str(e))
+        elif len(e.args) == 2 :
+            err = Service.fromErroToEnum(e.errno)    
+        if(err in Error_msg.__members__):
             msg = Error_msg[err].value
             return redirectToErrorPage(str(e), "def "+request.endpoint, msg)
         else:

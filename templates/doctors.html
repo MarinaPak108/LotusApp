@@ -75,7 +75,14 @@
       <input type = "text" name = "nurse" id = "nurse" placeholder = "Ассистент" value= "n/a" required>
       <div>
         <p>Статус врача:</p>
-        <input name = "active" id = "active" type="checkbox">
+        <input type="radio" id="active_s" name="status" value="true" onclick="updateStatus('true')">
+        <label for="active_s">Активный</label>
+        
+        <input type="radio" id="inactive" name="status" value="false" onclick="updateStatus('false')">
+        <label for="inactive">Неактивный</label>
+
+         <!-- Hidden input to hold the selected doctor status -->
+        <input type="hidden" id="active" name="active">
       </div>  
     </div>  
     <div>
@@ -98,14 +105,30 @@
         divInput.style.display = "none";
       }
       divInput.style.display = divInput.offsetParent === null ? 'block' : 'none'; 
+      var isActive;
       if(isModify){
         document.getElementById('id').value = id; 
         document.getElementById('dname').value = name; 
         document.getElementById('spec').value = spec; 
         document.getElementById('nurse').value = assistant;
-        alert(active)
-        document.getElementById('active').checked = active;
+        if(active == "false"){
+          isActive = Boolean(false);
+        } else{
+          isActive = Boolean(true); 
+        }
+        if (isActive) {
+          document.getElementById('active_s').checked = true;
+          updateStatus('true')
+        } else {
+          document.getElementById('inactive').checked = true;
+          updateStatus('false')
+        }
       }     
+    }
+
+    function updateStatus(status) {
+      // Update the hidden input with the selected status
+      document.getElementById('active').value = status;
     }
   </script>  
 {%endblock%}
