@@ -1,0 +1,853 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:59658
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:main:=============> Controller def home: day - 2024-10-31
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:26:51] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def my_form : added worksheet (2024-10-31)
+INFO:main:=============> Controller def my_form: saved document with new data
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:26:52] "[32mGET /assign HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:26:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:26:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:26:57] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:27:06] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:27:06] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:27:19] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:27:19] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:27:29] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:27:29] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61712
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:41:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:41:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:41:57] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61766
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:42:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:42:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:42:22] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:44:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:44:51] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:45:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:45:38] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62080
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:46:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:46:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:46:41] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62162
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:48:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:48:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:49:02] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62291
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:53:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:53:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:53:07] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:58:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:58:42] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62964
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:58:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:58:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 08:58:50] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63520
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:04:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:04:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:04:22] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63651
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:06:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:06:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:08:21] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:63734
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:08:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:08:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:08:48] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:64583
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:10:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:10:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:10:29] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:64871
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:10:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:10:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:10:53] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:49345
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:12:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:12:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:12:31] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:50691
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:14:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:14:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:14:13] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51470
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:17:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:17:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:17:18] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52297
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:20:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:20:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:20:08] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:52534
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:21:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:21:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:21:04] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:21:04] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53706
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:25:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:25:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:25:09] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:53914
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:25:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:25:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:25:37] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54276
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:27:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:27:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:27:24] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54376
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:28:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:28:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:28:15] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:54483
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:28:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:28:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:29:00] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:30:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:30:02] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:30:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:30:08] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55075
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55098
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55131
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55174
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55242
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 09:32:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51020
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:10:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:10:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51061
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:19:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:19:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:20:00] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:20:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:20:59] "GET /count/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:13] "GET /count/2024-10-26 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:24] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:27] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:40] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:40] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:54] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:21:54] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:22:14] "[32mPOST /doctors HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:22:14] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:22:20] "GET / HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:22:23] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:51094
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:23:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:23:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:23:47] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:24:12] "GET / HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:24:13] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:24:24] "GET /doctors HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:24:54] "GET / HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 0
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:24:55] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_test1 saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:25:18] "[32mPOST /day/2024-10-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 1
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:25:18] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 2_test2 saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:25:36] "[32mPOST /day/2024-10-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 2
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:25:36] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:main:=============> Controller def patients_post : patient 1_test3 saved to excel
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:26:21] "[32mPOST /day/2024-10-31 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 3
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:26:21] "GET /day/2024-10-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:26:46] "[32mGET /docListPrint/3 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 3
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:26:46] "GET /day/2024-10-31?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-31\\0_3_Хема_Камтамнени_{3}.xlsx HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:27:31] "[32mGET /docListPrint/8 HTTP/1.1[0m" 302 -
+INFO:main:=============> Controller def patients : number of patients in 2024-10-31 equals 3
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:27:31] "GET /day/2024-10-31?msg=Файл%20с%20обновленным%20списком%20создан:%20D:\\LotusApp\\records\\2024-10-31\\0_8_Виджай_Кумар_Кришнамурти_{3}.xlsx HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:56169
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:40:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:40:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58167
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err = Service.fromErroToEnum(e.errno)
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:41:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:41:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58231
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 243, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    err_msg = Service.fromErrorMsgToEnum(e.strerror)
+AttributeError: 'Exception' object has no attribute 'strerror'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:42:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:42:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58333
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 244, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(e.strerror)
+AttributeError: 'Exception' object has no attribute 'strerror'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:45:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:45:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58512
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 245, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 49, in home
+    errnum = e.args[0]
+IndexError: tuple index out of range
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:47:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:47:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:58550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:59446
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(e.strerror)
+AttributeError: 'Exception' object has no attribute 'strerror'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:55:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:55:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61789
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(e.strerror)
+AttributeError: 'Exception' object has no attribute 'strerror'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:56:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:56:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65011
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:=============> Controller : in def def home - 
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:57:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 10:57:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:65395
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60518
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(str(e))
+  File "d:\LotusApp\service\service.py", line 287, in fromErrorMsgToEnum
+    mssg = msg_cut[1]
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:02:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:02:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60697
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(str(e))
+  File "d:\LotusApp\service\service.py", line 286, in fromErrorMsgToEnum
+    mssg = msg_cut[1]
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:03:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:03:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60737
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60805
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(str(e))
+  File "d:\LotusApp\service\service.py", line 286, in fromErrorMsgToEnum
+    mssg = msg_cut[1]
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:04:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:04:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60886
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 50, in home
+    err = Service.fromErrorMsgToEnum(str(e))
+  File "d:\LotusApp\service\service.py", line 286, in fromErrorMsgToEnum
+    mssg = msg_cut[1]
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:04:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:04:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:60935
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61396
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61648
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception (variableToCheck)
+Exception: error in getWB:File is not a zip file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 51, in home
+    elif e.errno == "" :
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:11:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:11:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61684
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 31, in home
+    printErrorInLoggerThrowException(wb)
+  File "d:\LotusApp\main.py", line 246, in printErrorInLoggerThrowException
+    raise Exception (variableToCheck)
+Exception: error in getWB:File is not a zip file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 51, in home
+    elif e.errno == "" :
+AttributeError: 'Exception' object has no attribute 'errno'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:13:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:13:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61815
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:=============> Controller : in def def home - error in getWB:File is not a zip file
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:13:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:13:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:61959
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Exception on / [GET]
+Traceback (most recent call last):
+  File "d:\LotusApp\main.py", line 43, in home
+    records = Service.countPatients(Service, wb, day, medical_file)
+  File "d:\LotusApp\service\service.py", line 93, in countPatients
+    wb.save(folder_path) #update excel file
+  File "d:\LotusApp\.venv\lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "d:\LotusApp\.venv\lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "C:\Program Files\Python310\lib\zipfile.py", line 1251, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'd:\\LotusApp\\records/medical.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\LotusApp\.venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "d:\LotusApp\main.py", line 53, in home
+    if(err in Error_msg.__members__):
+UnboundLocalError: local variable 'err' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:14:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:14:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62023
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62193
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:=============> Controller : in def def home - [Errno 13] Permission denied: 'd:\\LotusApp\\records/medical.xlsx'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:17:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:17:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62274
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:=============> Controller : in def def home - error in getWB:File is not a zip file
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:18:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:18:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62361
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:19:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:19:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:62404
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:main:=============> Controller : in def def home - [Errno 13] Permission denied: 'D:\\LotusApp\\records/medical.xlsx'
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:19:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:19:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 11:19:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55311
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:58:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:58:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:28] "GET /count/2024-10-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55586
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:46] "GET /count/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 21:59:57] "GET /count/2024-10-31 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:00:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:00:16] "GET /count/2024-10-29 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55675
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:00:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:00:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:01:25] "GET /count/2024-10-30 HTTP/1.1" 200 -
+ERROR:main:Service msg: error in getWB:File is not a zip file
+ERROR:main:=============> Controller : in def def home - error in getWB:File is not a zip file
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:03:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:03:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:03:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:03:50] "GET /count/2024-10-30 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:55924
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:04:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Oct/2024 22:04:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

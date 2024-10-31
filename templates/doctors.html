@@ -21,6 +21,21 @@
       padding: 0.25em 0.5em;
       border: 1px solid black;
     }
+
+    /* Styling for the spans based on the data-status attribute */
+    td[data-status="true"]::before {
+      content: "✔";
+      color: green;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    td[data-status="false"]::before {
+      content: "✗";
+      color: grey;
+      font-weight: bold;
+      margin-right: 5px;
+    }
   </style>
 {% endblock %}
 {% block content %}
@@ -41,7 +56,7 @@
                     <td>{{doc.name}}</td>
                     <td>{{doc.spec}}</td>
                     <td>{{doc.nurse}}</td>
-                    <td>{{doc.active}}</td>
+                    <td data-status={{doc.active}}></td>
                     <td> <button onclick = "showInput('true', {{doc.id}}, '{{doc.name}}', '{{doc.spec}}', '{{doc.nurse}}', '{{doc.active}}')">Обновить данные</button></td>
                 </tr>
             {%endfor%}
@@ -49,7 +64,7 @@
     </table>
 </div> 
 <div>
-  <button onclick = "showInput('false', '', '', '')">Добавить врача</button>
+  <button onclick = "showInput('false', '', '', '', '', 'true')">Добавить врача</button>
 </div>
 <div id="input-div" style = "display:none;">
   <form method = "POST" id="form">
@@ -57,8 +72,11 @@
       <input type="hidden" name="id" id = "id">
       <input name = "dname" id = "dname" placeholder = "ФИО Врача" required>
       <input name = "spec" id = "spec" placeholder = "Специализация" required>
-      <input name = "active" id = "active" placeholder = "Статус" required>
       <input type = "text" name = "nurse" id = "nurse" placeholder = "Ассистент" value= "n/a" required>
+      <div>
+        <p>Статус врача:</p>
+        <input name = "active" id = "active" type="checkbox">
+      </div>  
     </div>  
     <div>
       <input type="submit" value="Сохранить">
@@ -85,9 +103,9 @@
         document.getElementById('dname').value = name; 
         document.getElementById('spec').value = spec; 
         document.getElementById('nurse').value = assistant;
-        document.getElementById('active').value = active;
-      }
-     
+        alert(active)
+        document.getElementById('active').checked = active;
+      }     
     }
   </script>  
 {%endblock%}

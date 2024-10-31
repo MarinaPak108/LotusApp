@@ -46,9 +46,11 @@ def home():
             return render_template('start.html', title="Список отчетов", tab = header, records = records)
         #raise Exception("error in getWB:")
     except Exception as e:
-            err = Service.fromErroToEnum(e.errno)
-            err_msg = Service.fromErrorMsgToEnum(e.strerror)
-            if(err in Error_msg.__members__ or err_msg in Error_msg.__members__):
+            if len(e.args)==1:
+                err = Service.fromErrorMsgToEnum(str(e))
+            elif len(e.args) == 2 :
+                err = Service.fromErroToEnum(e.errno)    
+            if(err in Error_msg.__members__):
                 msg = Error_msg[err].value
                 return redirectToErrorPage(str(e), "def "+request.endpoint, msg)
             else:
@@ -205,7 +207,7 @@ def doctor_list_print_patients (docId):
             redirectToErrorPage(str(e), "def "+request.endpoint)
     
 #################################################################################
-#settings for doctors list:
+#settings for doctors list update/hide/create:
 @app.route("/doctors")
 def doctors_list():
     try:
@@ -235,14 +237,13 @@ def doctors_list_post():
             return redirectToErrorPage(str(e), "def "+request.endpoint, msg)
         else:
             return redirectToErrorPage(str(e), "def "+request.endpoint)
-   
             
 #################################################################################
 #to print error msg from service layer and then rais Exception
 def printErrorInLoggerThrowException(variableToCheck):
     if((type(variableToCheck) is str) and variableToCheck.startswith("error")):
                 app.logger.error('Service msg: %s', variableToCheck)
-                raise Exception
+                raise Exception (variableToCheck)
 #to save to logger msg and redirect to error.html page
 def redirectToErrorPage(msg, name, user_msg=''):
     app.logger.error('%s : in def %s - %s', layer,name, msg)

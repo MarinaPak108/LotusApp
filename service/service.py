@@ -197,7 +197,7 @@ class Service():
         try:
             d = type(docs)
             #get only active doctors by active status
-            docs = [d for d in docs if d.active == 1]
+            docs = [d for d in docs if d.active == 'true']
             for doc in docs:
                 id = doc.id
                 sorted_docs=[p for p in patient if p.docId == id]
@@ -261,16 +261,16 @@ class Service():
             raise CustomException(f"Проверьте записи в файле medical.xls[settings] и файле records.xls[{day}] на соответствие.")
         #check if we need to save new record => get new id
         if(id == ''):
-            id = wsDoc.max_row+1
+            id = int(wsDoc.max_row+1)
         try:
-            wsDoc[id][0].value = id
+            wsDoc[id][0].value = int(id)
             wsDoc[id][1].value = name
             wsDoc[id][2].value = spec
             wsDoc[id][3].value = nurse
             wsDoc[id][4].value = isActive
             wb.save(med_file)
             
-            wsrDoc[id][0].value = id
+            wsrDoc[id][0].value = int(id)
             wsrDoc[id][1].value = name
             wsrDoc[id][2].value = spec
             wsrDoc[id][3].value = nurse
@@ -282,7 +282,9 @@ class Service():
         return 'e_'+str(err_no)
     
     def fromErrorMsgToEnum(err_msg):
-        return err_msg.replace(" ", "_")    
+        msg_cut = err_msg.split(':', 1)
+        mssg = msg_cut[1]
+        return mssg.replace(" ", "_")    
             
     def getDoctorList (self, folder, today_folder,  day, docId):
         try: 
